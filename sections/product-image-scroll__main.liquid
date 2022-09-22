@@ -2,7 +2,6 @@
 ** Product - image scroll view **
 - Product template
 {% endcomment %}
-
 {% assign id = section.id %}
 {% comment %} Layout {% endcomment %}
 {% assign width = section.settings.width %}
@@ -224,7 +223,11 @@
                 {{ product.description | split: '<!-- split -->' | first }}
               </div>
             {% endif %}
-
+          
+            {%- elsif block.type == 'liquid' -%}
+              <div class="custom_liquid">
+                {{block.settings.liquid}}
+              </div>
           {%- elsif block.type == 'form' -%}
             {% comment %} Purchase form {% endcomment %}
             <div class="product-form-container has-padding-top">
@@ -608,6 +611,17 @@
           "info": "[Learn more](https:\/\/help.outofthesandbox.com\/hc\/en-us\/articles\/115006910707-Using-the-Size-Chart-Sections-themes-)"
         }
       ]
+    },
+    {
+      "type": "liquid",
+      "name": "Liquid",
+     "settings": [
+        {
+          "type": "liquid",
+          "id": "liquid",
+          "label": "Liquid"
+        }
+     ]
     }
   ],
   "default": {
