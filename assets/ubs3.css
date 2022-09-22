@@ -1,0 +1,112 @@
+   @media screen and (max-width: 798.98px)
+  {
+    body.collection .section.is-width-wide {
+    width: 100%;
+    min-width: 100% !important;
+}.container.collection-matrix {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+    h3#h3-166138822879ac234c-2,h3#th3-166138822879ac234c-2{
+    display: none !important;
+}
+.better-section .image-element__wrap,.image-with-text-3 .image-element__wrap {
+    background-size: 100% !important;
+    height: 369px !important;
+    background-repeat: no-repeat !important;
+}
+div#shopify-section-166138822879ac234c-1 {
+    display: none !important;
+}.better-section .image-with-text__wrapper h3 br {
+    display: none !important;
+}  
+    .for_mobile_only h3 span {
+    display: flex;
+    width: 70%;
+}
+    img.image-wi2 {
+    width: 95px;
+    position: absolute;
+    right: 20px;
+    margin-top: -67px;
+    padding: 8px;
+}
+  }
+
+/********Only for collections above ipad***********************/
+  @media screen and (min-width: 798.98px)
+  {
+.breadcums.container {
+    margin: 0 0 40px;
+}.breadcums.container .two-fifths.medium-down--one-whole.column.has-no-side-gutter.hide-when-banner-enabled {
+    position: absolute;
+    margin-top: 28px;
+}.collection__filters.three-fifths.medium-down--one-whole.column {
+    margin-top: 26px;
+}
+  }/********Only for collections***********************/
+
+   @media screen and (min-width: 798.98px)
+  {
+.for_mobile_only1 {
+    display: none !important;
+}
+
+    
+  }
+
+@media screen and (min-device-width: 1179px) and (max-device-width: 1440px) { 
+
+div#template-customers-login .section__wrapper {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    height: 100vh;
+}
+  
+}
+
+.product-recommendations .container {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-device-width: 1179px) and (max-device-width: 1440px) { 
+div#template-customers-login .section__wrapper {
+padding-top: 160px;
+    padding-bottom: 150px;
+    min-height: 70vh;
+}
+ 
+}
+
+
+div#template-customers-login .section__wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: 65vh;
+}
+/******** for login page and sidebar header pages***********************/
+   @media screen and (min-width: 1769px)
+  {
+
+div#template-customers-login .section__wrapper {
+padding-top: 130px;
+    padding-bottom: 0;
+    min-height: 75vh;
+}
+    
+div#shopify-section-header-vertical-2 {
+    position: absolute;
+    bottom: 265px;
+}div#shopify-section-header-vertical-1 {
+    position: absolute;
+    bottom: 136px;
+}div#shopify-section-header-vertical-4 {
+    position: absolute;
+    bottom: 45px;
+}
+  }
