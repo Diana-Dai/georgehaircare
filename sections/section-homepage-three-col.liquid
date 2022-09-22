@@ -129,10 +129,9 @@ background-repeat: no-repeat;
               {% endif %}
             </div>
 
-   
-
+   {{block.settings.title1}}
+            {% if block.settings.title1 != blank or block.settings.text1 != blank %}
 <div class="image-with-text__wrapper">
-
 <div class="image-with-left-below" style="background: {{ block.settings.background-below }};"> 
          
  {% if block.settings.title1 != blank %}
@@ -165,6 +164,7 @@ background-repeat: no-repeat;
 
               
 </div>
+{% endif %}
 
             
           

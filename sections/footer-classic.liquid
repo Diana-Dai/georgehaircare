@@ -148,7 +148,7 @@
       {% endif %}
 
       <div class="footer__credits {% if section.settings.display_payment_methods %}two-thirds {% else %} one-whole {% endif %} column small-down--one-whole">
-        <p>&copy; {{ "now" | date: "%Y" }} {{ shop.name | link_to: routes.root_url }}.</p>
+        <p style="text-transform: capitalize;">&copy; {{ "now" | date: "%Y" }} {{ shop.name | link_to: routes.root_url }}.</p>
         {{ section.settings.copyright_text }}
         {% if section.settings.display_designed_by %}
           <p>{{ 'layout.general.designer_credits_html' | t }}</p>
@@ -168,6 +168,22 @@
       {% endif %}
     </div>
   </section>
+  <section class="footer__extra-content section">
+    <div class="footer__content
+    section
+    is-width-wide
+    has-background
+    has-padding-top
+    has-padding-bottom">
+<div class="container has-limit is-justify-space-between" style="flex-direction: column;">
+  <p class="footer__heading">
+    {{ section.settings.acknowledge_title }}
+  </p>
+  {{ section.settings.acknowledge_text }}
+
+</div>
+    </div>
+  </section>
 </footer>
 
 {% schema %}
@@ -181,6 +197,16 @@
       "type": "richtext",
       "id": "copyright_text",
       "label": "Copyright text"
+    },
+    {
+      "type": "text",
+      "id": "acknowledge_title",
+      "label": "Acknowledge title"
+    },
+    {
+      "type": "richtext",
+      "id": "acknowledge_text",
+      "label": "Acknowledge text"
     },
     {
       "type": "checkbox",

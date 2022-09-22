@@ -110,7 +110,7 @@
 {% endstyle %}
 
 {% comment %} HTML markup {% endcomment %}
-<section class="featured-video
+<section {% if section.settings.collection_url != blank %}style="cursor: pointer;"{%endif%} data-link-to="{{ section.settings.collection_url.url }}" class="featured-video
                 section
                 {{ section.settings.css_class }}
                 is-width-{{ section.settings.width }}
@@ -124,6 +124,7 @@
         {% if section.settings.animation != "none" %}
           data-scroll-class="{{ section.settings.animation }}"
         {% endif %}>
+        
   <div class="container
               video__container
               {% if section.settings.width == 'wide' or section.settings.width == 'half' %}
@@ -193,8 +194,10 @@
           </div>
         </div>
       </div>
+
     </div>
   </div>
+
      <script>
    
    setTimeout(() => {
@@ -206,6 +209,15 @@
     });
      playBtn[0].click();
      
+      $(document).on('click','.featured-video.section', function () {  
+        debugger;
+        if($(this).attr('data-link-to')){
+          debugger;
+          window.location.href = $(this).attr('data-link-to');
+
+        }
+      })
+
    }, 2000);
    
 </script>
@@ -242,6 +254,11 @@
       "type": "header",
       "content": "Video"
     },
+   {
+    "type": "collection",
+    "id": "collection_url",
+    "label": "Link to"
+   },
     {
       "type": "select",
       "id": "aspect_ratio",

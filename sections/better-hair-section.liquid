@@ -127,7 +127,7 @@
               {% endif %}
             </div>
 
-              <div class="for_mobile_only image-with-text__wrapper">
+              <!-- <div class="for_mobile_only image-with-text__wrapper">
  
   {% if block.settings.title11 != blank %}
                 <h3 class="image-with-text__heading text-align-{{ block.settings.alignment }} is-{{ block.settings.heading_size }}" >
@@ -141,7 +141,7 @@
  {% endif %}  </h3>
               {% endif %}
          
-          </div>
+          </div> -->
 
           
   {% if block.settings.image_below != blank %}
@@ -218,11 +218,13 @@
 
   </div>
 </section>
-
+<style>
+  
+</style>
 {% schema %}
 {
   "name": "better Hair with text",
-  "class": "image-with-text image-with-text-1",
+  "class": "image-with-text image-with-text-1 better-hair-with-text",
   "max_blocks": 3,
   "settings": [
      {

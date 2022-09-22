@@ -95,36 +95,37 @@
                   {% render 'column-width', value: section.settings.icons_per_row %}
                   text-align-{{ section.settings.align_text }}
                   medium-down--one-whole">
-
-        {%- capture icon_size -%}
-          is-{{ section.settings.icon_size }}
-        {%- endcapture -%}
-
-        {%- assign icon = block.settings.icon_label | downcase -%}
-
-        {% render 'icon',
-                name: icon,
-                icon_class: icon_size
-        %}
-
-        {% if block.settings.title != blank or text != blank %}
-          <div class="icon-column__text ">
-            <h3 class="icon-column__title title">{{ block.settings.title }}</h3>
-            {{ text }}
-          </div>
-        {% endif %}
-
-        {% if block.settings.button_label != blank %}
-          <div class="icon-column__action has-padding-top">
-            {% render 'button',
-                    label: block.settings.button_label,
-                    href: block.settings.link,
-                    style: section.settings.button_style,
-                    type: "link"
-            %}
-          </div>
-        {% endif %}
-
+                  <div>
+                    {%- capture icon_size -%}
+                    is-{{ section.settings.icon_size }}
+                  {%- endcapture -%}
+          
+                  {%- assign icon = block.settings.icon_label | downcase -%}
+          
+                  {% render 'icon',
+                          name: icon,
+                          icon_class: icon_size
+                  %}
+          
+                  {% if block.settings.title != blank or text != blank %}
+                    <div class="icon-column__text ">
+                      <h3 class="icon-column__title title">{{ block.settings.title }}</h3>
+                      {{ text }}
+                    </div>
+                  {% endif %}
+          
+                  {% if block.settings.button_label != blank %}
+                    <div class="icon-column__action has-padding-top">
+                      {% render 'button',
+                              label: block.settings.button_label,
+                              href: block.settings.link,
+                              style: section.settings.button_style,
+                              type: "link"
+                      %}
+                    </div>
+                  {% endif %}
+          
+                  </div>
       </div>
     {% endfor %}
   </div>
