@@ -328,7 +328,7 @@ body.article .article.blog-card.card {
     }
   .product .product-main .product__information dl.accordion.test dd{
     padding: 5px 35px 10px;
-    font-size: calc(.5rem + 1vw);
+    /* font-size: calc(.5rem + 1vw); */
 }
  .product .product-main .product_section {
     border-bottom: 1.5px solid; #000;
@@ -416,6 +416,7 @@ body.article .article.blog-card.card {
   .product .product-main .purchase-details .purchase-details__spb--true button.button {
       font-size: 12px;
   }
+  
  /* .search_custom-text a {
       font-size: 25px;
   } */
@@ -541,6 +542,11 @@ body.article .article.blog-card.card {
 flex-direction: column;
 align-items: center;
 justify-content: center;
+}
+@media (min-width: 799px){
+.shopify-section.icon-with-text-column section.section.is-width-wide.has-no-side-gutter.has-background.equal-columns--outside-trim .icon-with-text-column__column.column.has-padding.one-third.text-align-center.medium-down--one-whole > div{
+    border-right: 1.5px solid;
+}
 }
 .shopify-section.icon-with-text-column .icon-with-text-column__column.column.has-padding.one-third.text-align-center.medium-down--one-whole .icon.is-medium {
     height: 7.6rem;
@@ -786,9 +792,9 @@ body.product section.section.is-width-wide {
   .product .product-main .product__information .accordion dt a {
     font-size: 20px !important;
 }
-  .product .product-main .product__information dl.accordion.test dd.active {
+  /* .product .product-main .product__information dl.accordion.test dd.active {
     font-size: 15px !important;
-}
+} */
 /* .page-title,
   body.page-about-banner .shopify-section.image-with-text.image-with-text-1 h3.image-with-text__heading.text-align-left.is-regular {
     font-size: 50px !important;
@@ -1128,7 +1134,7 @@ body.blog .card-image.blog-card__image .image-element__wrap {
 }
   .product .product-main .product__information dl.accordion.test dd.active {
     padding: 5px 15px 10px !important;
-    font-size: 15px !important;
+    /* font-size: 15px !important; */
 }
   .mobile-slider-Home .flickity-viewport {
     height: 315px !important;
@@ -1196,7 +1202,7 @@ body.blog .card-image.blog-card__image .image-element__wrap {
 }
 .product .product-main .product__information dl.accordion.test dd.active {
     padding: 5px 35px 10px;
-    font-size: calc(.5rem + 1vw);
+    /* font-size: calc(.5rem + 1vw); */
 }
 body.product .product__information.has-product-sticker.one-half.column.medium-down--one-whole {
     padding:0;
@@ -1436,6 +1442,7 @@ img.image-with-star {
 h2.maintitle.title.text-center {
     padding: 10px 0;
     /* font-size: calc(1.5rem + 1vw); */
+    font-size: 2rem;
 }
 /*.image-with-left-div {
     display: flex;
