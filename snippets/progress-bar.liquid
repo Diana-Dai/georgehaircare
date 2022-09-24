@@ -1,0 +1,155 @@
+{% assign free_shipping_value = 10000.000 %}
+{% assign 10_discount_value = 11000.000 %}
+{% assign 12_discount_value = 12000.000 %}
+{%- comment -%}{% assign cart_total = cart.total_price %}{%- endcomment -%}
+{% assign cart_total = 11400 %}
+{% assign shipping_value_left = free_shipping_value | minus: cart_total %}
+{% assign 10_discount_left = 10_discount_value | minus: cart_total %}
+{% assign 12_discount_left = 12_discount_value | minus: cart_total %}
+
+{% if shipping_value_left > 0 %}
+    {%- assign progress_width = cart_total | divided_by: free_shipping_value | times: 100  -%}
+    {%- capture message -%}
+        Add
+        <strong>{{ shipping_value_left | money }}</strong> to get
+        <strong>free shipping</strong>
+        </p>
+    {%- endcapture -%}
+{% elsif 10_discount_left > 0 %}
+    {%- assign difference = 10_discount_value | minus: free_shipping_value -%}
+    {%- assign percentage_left =  10_discount_left | divided_by: difference  -%}
+    {%- assign percentage =  1 | minus: percentage_left -%}
+    {%- assign progress_width = percentage | times: 33.33 | plus: 33.33  -%}
+    {%- capture message -%}
+    Add
+    <strong>{{ 10_discount_left | money }}</strong> to unlock
+    <strong>10% OFF</strong>
+    </p>
+    {%- endcapture -%}
+{% elsif 12_discount_left > 0 %}
+{%- assign difference = 12_discount_value | minus: 10_discount_value -%}
+{%- assign percentage_left =  12_discount_left | divided_by: difference  -%}
+{%- assign percentage =  1 | minus: percentage_left -%}
+{%- assign progress_width = percentage | times: 33.33 | plus: 66.66  -%}
+{%- capture message -%}
+Add
+<strong>{{ 12_discount_left | money }}</strong> to unlock
+<strong>12% OFF</strong>
+</p>
+{%- endcapture -%}
+{% else %}
+{%- assign progress_width = 100  -%}
+{% endif %}
+<div class="progress-bar__container">
+  <div class="progress-bar__top">
+    <p class="ql-align-center">
+      <img src="https://www.amabattery.co.za/wpimages/wp4cb45f10.gif"> 
+      {{message}}
+  </div>
+  <div
+    class="progress-bar__middle"
+    style="background: rgba(255, 204, 1, 0.31);"
+  >
+    <div
+      class="mu-absolute  mu-h-2"
+      style="background: rgb(255, 204, 1); width: {{progress_width}}%;"
+    ></div>
+    <div
+      class="mu-flex-1 mu-h-2 mu-bg-transparent mu-z-20 mu-mix-blend-overlay mu-border-r"
+      style="border-color: rgb(113, 128, 150); display: block;"
+    ></div>
+    <div
+      class="mu-flex-1 mu-h-2 mu-bg-transparent mu-z-20 mu-mix-blend-overlay mu-border-r"
+      style="border-color: rgb(113, 128, 150); display: block;"
+    ></div>
+    <div
+      class="mu-flex-1 mu-h-2 mu-bg-transparent mu-z-20 mu-mix-blend-overlay mu-border-r"
+      style="border-color: rgb(113, 128, 150); display: block;"
+    ></div>
+  </div>
+  <div class="progress-bar__bottom">
+    <div
+      class="mu-absolute mu-transform mu-w-max"
+      style="left: 33.33%; width: fit-content; white-space: nowrap; color: rgb(44, 50, 59); --transform-translate-x: -50%;"
+    >
+      Free Shipping
+    </div>
+    <div
+      class="mu-absolute mu-transform mu-w-max"
+      style="left: 66.66%; width: fit-content; white-space: nowrap; color: rgb(44, 50, 59); --transform-translate-x: -50%;"
+    >
+     10% OFF
+    </div>
+    <div
+      class="mu-absolute mu-transform mu-w-max"
+      style="left: 100%; width: fit-content; white-space: nowrap; color: rgb(44, 50, 59); --transform-translate-x: -50%;"
+    >
+    12% OFF
+    </div>
+  </div>
+</div>
+
+<style>
+    .progress-bar__container{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .progress-bar__container *{
+        box-sizing: border-box;
+border-width: 0;
+border-style: solid;
+    }
+    .progress-bar__top{
+        text-align: center;
+        margin-bottom: 4px;
+    }
+    .progress-bar__top img{
+        height: 30px !important;
+width: auto !important;
+display: inline-block !important;
+vertical-align: middle !important;
+padding: 0;
+    }
+    .progress-bar__middle{
+        display: flex;
+        height: 8px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
+    .progress-bar__bottom{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+    .progress-bar__bottom .mu-transform{
+        --transform-translate-x: 0;
+  --transform-translate-y: 0;
+  --transform-rotate: 0;
+  --transform-skew-x: 0;
+  --transform-skew-y: 0;
+  --transform-scale-x: 1;
+  --transform-scale-y: 1;
+  transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
+    }
+     .mu-absolute{
+        position: absolute;
+    }
+    .mu-flex-1{
+        flex: 1 1 0%;
+    }
+    .mu-h-2 {
+  height: 8px;
+}
+.mu-border-r {
+  border-right-width: 1px;
+}
+.mu-bg-transparent {
+  background-color: transparent;
+}
+.mu-z-20 {
+  z-index: 20;
+}
+</style>

@@ -7,6 +7,7 @@
 </template>
 
 <template data-html="content">
+
   {% comment %} No items in the cart message {% endcomment %}
   <div class="ajax-cart__empty-cart-message text-align-center {% if cart.item_count > 0 %}is-hidden {% endif %}">
     <p class="ajax-cart__cart-title has-margin-bottom">{{ 'cart.general.title' | t }}
@@ -24,6 +25,7 @@
     <div class="ajax-cart__cart-count text-align-center">
       <p class="ajax-cart__cart-title">{{ 'cart.general.title' | t }} <span class="cart__count--text" data-bind="itemCount" >{{ cart.item_count }}</span></p>
     </div>
+    {% render "progress-bar",cart:cart %}
     <div class="ajax-cart__list">
       {% assign total_saving = 0 %}
 

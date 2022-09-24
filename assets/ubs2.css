@@ -1,5 +1,6 @@
 .page-what-we-stand-for .maintitle.title.text-left {
     padding: 0px 22px;
+    padding-bottom: 0;
 }
 .page-what-we-stand-for .image-with-text__heading {
        padding: 0px 22px;
@@ -10,6 +11,8 @@
 .page-what-we-stand-for .maintitle {
     border-bottom: 2px solid;
   padding: 15px 22px !important;
+ 
+  margin-bottom: 0 !important;
 }
 .Introducing-Section .image-with-text__heading {
     padding: 22px;
@@ -26,7 +29,7 @@
 }
 .page-the-never-ever-list .has-no-side-gutter .one-half {
     align-items: flex-start;
-   /* border-left: 2px solid;*/
+   border-right: 1.5px solid;
 }
 .page-the-never-ever-list .image-with-text__heading {
     padding: 0px 22px;
@@ -121,14 +124,14 @@
   .page-what-we-stand-for .image-with-text__heading.is-small {
     font-size: 6vw;
 }
-.page-what-we-stand-for .maintitle {
+/* .page-what-we-stand-for .maintitle {
     font-size: 13vw!important;
     line-height: 13vw !important;
 }
 .page-the-never-ever-list .image-with-text__heading {
     font-size: 13vw !important;
     line-height: 13vw !important;
-}
+} */
   .better-hair-section .image-with-text__text-column {
     border-right: 0px !important;
     margin: 0px !important;
