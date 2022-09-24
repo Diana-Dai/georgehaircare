@@ -13040,7 +13040,8 @@ shopify-payment-terms {
 
 .footer__content {
   color: {{ settings.footer_text_color }};
-  font-size: {{ settings.footer_font_size | append: 'px' }};
+  /* font-size: {{ settings.footer_font_size | append: 'px' }}; */
+  font-size:0.8rem;
 }
 .footer__content a,
 .footer__content a:visited {
@@ -13053,7 +13054,8 @@ shopify-payment-terms {
 
 .footer__heading {
   font-family: {{ settings.heading__font.family }}, {{ settings.heading__font.fallback_families }};
-  font-size: {{ settings.footer_heading_font_size | append: 'px' }};
+  /* font-size: {{ settings.footer_heading_font_size | append: 'px' }}; */
+  font-size:1rem;
   color: {{ settings.footer_text_color }};
   margin-bottom: 10px;
 }
@@ -13108,7 +13110,7 @@ shopify-payment-terms {
 }
 
 .footer__credits {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .footer__credits p {
@@ -14388,13 +14390,14 @@ h1.header__logo-text > a:hover {
   line-height: 1.2;
 }
 .image-with-text__heading.is-small {
-  font-size: {{ settings.heading_size | times: 0.8 | floor | append: 'px' }};
+  /* font-size: {{ settings.heading_size | times: 0.8 | floor | append: 'px' }}; */
+  font-size: 1.5em;
 }
 .image-with-text__heading.is-regular {
-  font-size: {{ settings.heading_size | times: 1.0 | floor | append: 'px' }};
+  /* font-size: {{ settings.heading_size | times: 1.0 | floor | append: 'px' }}; */
 }
 .image-with-text__heading.is-large {
-  font-size: {{ settings.heading_size | times: 1.5 | floor | append: 'px' }};
+  /* font-size: {{ settings.heading_size | times: 1.5 | floor | append: 'px' }}; */
 }
 
 .image-with-text__link {

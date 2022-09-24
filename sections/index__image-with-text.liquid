@@ -105,6 +105,7 @@
           
             <div class="image-with-text__wrapper differ-one">
 <!---For Mobile ONly--->
+{% if block.settings.titlegeorge != blank  %}
    <div class="for_mobile_only1 image-with-text__wrapper">
            {% if block.settings.image_leftgeorge != blank %} 
                 <div class="image-george">
@@ -121,7 +122,7 @@
          
           </div>
 <!---For Mobile ONly--->
-          
+{% endif %}
               {% if block.settings.title != blank %}
                 <h3 id="h3-{{ block.id }}" class="image-with-text__heading text-align-{{ block.settings.alignment }} is-{{ block.settings.heading_size }}" >
                   {{ block.settings.title }}
@@ -145,7 +146,7 @@
                 </div>
               {% endif %}
             </div>
- 
+      {% if block.settings.title11 != blank  %}
 <!---For Mobile ONly--->
               <div class="for_mobile_only image-with-text__wrapper">
  {% if block.settings.image_left11 != blank %} 
@@ -160,7 +161,7 @@
               {% endif %}
          
           </div><!---For Mobile ONly--->
-          
+          {% endif %}
   {% if block.settings.image_below != blank %}
                 <img class="image-with-star" src="{{ block.settings.image_below | img_url: '500x' }}">
  {% endif %}

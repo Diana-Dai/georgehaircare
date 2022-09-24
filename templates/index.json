@@ -296,7 +296,7 @@
             "button_style": "button--secondary",
             "title1": "",
             "heading_size1": "small",
-            "text1": "<p><br\/><strong>GEORGE IS MADE FOR PEOPLE WHO PREFER LOW MAINTENANCE, SOME MAINTENANCE, AND FOR PEOPLE WHO LOVE TO GO ALL OUT WHEN IT COMES TO HAIR.<\/strong><\/p><p><strong>FOR ANYONE AND EVERONE WHO IS READY TO DITCH THE DRYING, FRIZZING, SOUL-SUCKING, HAVOC-MAKING SOAP AND CHEMICAL-FILLED GARBAGE.<\/strong><\/p><p><\/p>",
+            "text1": "<p><strong>GEORGE IS MADE FOR PEOPLE WHO PREFER LOW MAINTENANCE, SOME MAINTENANCE, AND FOR PEOPLE WHO LOVE TO GO ALL OUT WHEN IT COMES TO HAIR.<\/strong><\/p><p><strong>FOR ANYONE AND EVERONE WHO IS READY TO DITCH THE DRYING, FRIZZING, SOUL-SUCKING, HAVOC-MAKING SOAP AND CHEMICAL-FILLED GARBAGE.<\/strong><\/p>",
             "button_label1": "",
             "link1": "",
             "title11": "",
@@ -454,6 +454,7 @@
     },
     "166138822814db3f4e": {
       "type": "index__image-with-text",
+      "disabled": true,
       "blocks": {
         "166138822879ac234c-2": {
           "type": "text",
@@ -578,6 +579,30 @@
         "animation": "none",
         "css_class": "better-section",
         "custom_css": ""
+      }
+    },
+    "16639787331c35259b": {
+      "type": "apps",
+      "blocks": {
+        "76eed90c-1268-4f10-8ef1-b7983a0ddf33": {
+          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/reviews-carousel\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "show_heading": false,
+            "heading": "",
+            "badge_link": "",
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "76eed90c-1268-4f10-8ef1-b7983a0ddf33"
+      ],
+      "settings": {
+        "width": "standard",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "css_class": "okendo-container",
+        "custom_css": ".okendo-container{\nborder-bottom:1.5px solid;\nwidth:100%;\n}"
       }
     },
     "1661388523ad42bc09": {
@@ -899,6 +924,7 @@
     "166138822814db3f4e",
     "1660367973e97dd437",
     "1557857417940",
+    "16639787331c35259b",
     "1661388523ad42bc09",
     "16633280729da75f0f",
     "16632247585c17ec9d",

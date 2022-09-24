@@ -126,24 +126,23 @@
                 </div>
               {% endif %}
             </div>
-
+            {% if block.settings.title11 != blank  %}
               <div class="for_mobile_only image-with-text__wrapper">
- 
-  {% if block.settings.title11 != blank %}
-                <h3 class="image-with-text__heading text-align-{{ block.settings.alignment }} is-{{ block.settings.heading_size }}" >
-                  {{ block.settings.title11 }}
-              {% if block.settings.image_left11 != blank %} 
-               
-                <img align="right" class="image-wi2" src="{{ block.settings.image_left11 | img_url: '200x' }}" style="
-    width: 90px;
-">
-             
- {% endif %}  </h3>
-              {% endif %}
-         
-          </div>
+                      {% if block.settings.title11 != blank %}
+                                    <h3 class="image-with-text__heading text-align-{{ block.settings.alignment }} is-{{ block.settings.heading_size }}" >
+                                      {{ block.settings.title11 }}
+                                  {% if block.settings.image_left11 != blank %} 
+                                  
+                                    <img align="right" class="image-wi2" src="{{ block.settings.image_left11 | img_url: '200x' }}" style="
+                        width: 90px;
+                    ">
+                                
+                    {% endif %}  </h3>
+                    {% endif %}
+              
+                </div>
 
-          
+            {% endif %}
   {% if block.settings.image_below != blank %}
                 <img class="image-with-star" src="{{ block.settings.image_below | img_url: '500x' }}">
  {% endif %}
