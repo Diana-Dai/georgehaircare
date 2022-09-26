@@ -708,6 +708,7 @@
     },
     "16632247585c17ec9d": {
       "type": "section-homepage-three-col",
+      "disabled": true,
       "blocks": {
         "166322475861a66c16-2": {
           "type": "text",
@@ -753,159 +754,26 @@
         "custom_css": ""
       }
     },
-    "1661390006e217c7c8": {
-      "type": "index__image-with-text",
-      "disabled": true,
+    "1664162635fee5c8bb": {
+      "type": "apps",
       "blocks": {
-        "16613900060bf700d9-2": {
-          "type": "text",
+        "9aa5a8d8-9711-4c01-b3e1-b1b2b38acf42": {
+          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
-            "title": "THE NEVER<br>EVER LIST",
-            "heading_size": "large",
-            "text": "<p>Things you'll never find in a bottle, tube or sachet of George.<\/p>",
-            "button_label": "Read the list",
-            "link": "",
-            "button_style": "button--secondary",
-            "title1": "",
-            "heading_size1": "regular",
-            "text1": "",
-            "button_label1": "",
-            "link1": "",
-            "title11": "",
-            "titlegeorge": "",
-            "background": "#f8f0e3",
-            "text_color": "rgba(0,0,0,0)",
-            "alignment": "left",
-            "vertical_position": "end"
-          }
-        },
-        "16613900060bf700d9-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Screenshot_5.png",
-            "image_crop": "center",
-            "image_link": ""
+            "heading_size": 20,
+            "feed_width": 100,
+            "html_area": ""
           }
         }
       },
       "block_order": [
-        "16613900060bf700d9-2",
-        "16613900060bf700d9-0"
+        "9aa5a8d8-9711-4c01-b3e1-b1b2b38acf42"
       ],
       "settings": {
-        "main_title": "",
-        "font-size": 20,
-        "width": "wide",
-        "show_gutter": false,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "animation": "none",
-        "css_class": "",
-        "custom_css": ""
-      }
-    },
-    "16591781271ada1b01": {
-      "type": "index__rich-text",
-      "disabled": true,
-      "settings": {
-        "title": "",
-        "heading_font": "open_sans_n4",
-        "heading_color": "rgba(0,0,0,0)",
-        "heading_alignment": "left",
-        "heading_size": 20,
-        "text": "<p>George is made for people who prefer low maintenance, some maintenance, and for people who love to go all out when it comes to hair. For anyone and everone who is ready to ditch the drying, frizzing, soul-sucking, havoc-making soap and chemical-filled garbage. <\/p>",
-        "text_font": "open_sans_n4",
-        "text_color": "rgba(0,0,0,0)",
-        "text_alignment": "center",
-        "text_size": 27,
-        "columns": 1,
-        "button_label": "",
-        "button_link": "",
-        "button_alignment": "center",
-        "button_style": "button--primary",
-        "background": "#f8f0e3",
-        "gradient": "{{ shop.brand.colors.primary[1].background }}",
-        "gradient_rotation": 180,
-        "width": "wide",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "padding_left": 0,
-        "padding_right": 0,
-        "animation": "none",
-        "css_class": "",
-        "custom_css": ""
-      }
-    },
-    "1660368550bb5ead72": {
-      "type": "index__image-with-text-overlay",
-      "disabled": true,
-      "settings": {
-        "link": "",
-        "image": "shopify:\/\/shop_images\/Screen_Shot_2022-08-25_at_11.27.11_am.png",
-        "pretext": "",
-        "title": "THE NEVER EVER LIST",
-        "subtitle": "<p>THINGS YOU'LL NEVER FIND IN A BOTTLE, TUBE OR SACHET OF GEORGE.<\/p>",
-        "pretext_color": "#000000",
-        "heading_color": "#000000",
-        "subheading_color": "#000000",
-        "text_alignment": "left",
-        "text_horizontal_position": "center",
-        "text_vertical_position": "bottom",
-        "background_color": "#ffffff",
-        "background_opacity": 0,
-        "border_color": "#ffffff",
-        "border_width": 0,
-        "text_width": 100,
-        "button_1": "READ THE LIST",
-        "button_1_link": "",
-        "button_1_style": "button--primary",
-        "button_2": "",
-        "button_2_link": "",
-        "button_2_style": "button--secondary",
-        "mobile_image_crop": "center",
-        "mobile_text_below_image": true,
-        "pretext_color_mobile": "rgba(0,0,0,0)",
-        "heading_color_mobile": "rgba(0,0,0,0)",
-        "subheading_color_mobile": "rgba(0,0,0,0)",
-        "width": "wide",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "padding_left": 0,
-        "padding_right": 0,
-        "animation": "none",
-        "css_class": "",
-        "custom_css": ""
-      }
-    },
-    "165913604164455c41": {
-      "type": "index__rich-text",
-      "disabled": true,
-      "settings": {
-        "title": "",
-        "heading_font": "open_sans_n4",
-        "heading_color": "rgba(0,0,0,0)",
-        "heading_alignment": "center",
-        "heading_size": 20,
-        "text": "<p><strong>Acknowledgement of Country<\/strong><\/p><p>George wishes to acknowledge the Kaurna people of the Adelaide Plains, the Traditional Custodians of the land on which we work and gather. We pay respect to Elders - past, present and emerging - and recognise their ongoing connection to this beautiful country, with knowledge and stories that have been handed down since time immemorial.<\/p>",
-        "text_font": "open_sans_n4",
-        "text_color": "rgba(0,0,0,0)",
-        "text_alignment": "center",
-        "text_size": 12,
-        "columns": 1,
-        "button_label": "",
-        "button_link": "",
-        "button_alignment": "center",
-        "button_style": "button--secondary",
-        "background": "{{ shop.brand.colors.primary[1].background }}",
-        "gradient": "{{ shop.brand.colors.primary[1].background }}",
-        "gradient_rotation": 180,
         "width": "standard",
         "padding_top": 20,
         "padding_bottom": 20,
-        "padding_left": 0,
-        "padding_right": 0,
-        "animation": "none",
-        "css_class": "",
+        "css_class": "instagram_container",
         "custom_css": ""
       }
     }
@@ -928,9 +796,6 @@
     "1661388523ad42bc09",
     "16633280729da75f0f",
     "16632247585c17ec9d",
-    "1661390006e217c7c8",
-    "16591781271ada1b01",
-    "1660368550bb5ead72",
-    "165913604164455c41"
+    "1664162635fee5c8bb"
   ]
 }
