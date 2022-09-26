@@ -774,7 +774,7 @@
         "padding_top": 20,
         "padding_bottom": 20,
         "css_class": "instagram_container",
-        "custom_css": ".instagram_container{\nborder-bottom:1.5px solid;\nwidth:100%;\nmax-width: initial;\n}"
+        "custom_css": ""
       }
     }
   },
