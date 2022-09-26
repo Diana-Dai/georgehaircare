@@ -602,7 +602,7 @@
         "padding_top": 0,
         "padding_bottom": 0,
         "css_class": "okendo-container",
-        "custom_css": ".okendo-container{\nborder-bottom:1.5px solid;\nwidth:100%;\n}"
+        "custom_css": ".okendo-container{\nborder-bottom:1.5px solid;\nwidth:100%;\nmax-width: initial;\n}"
       }
     },
     "1661388523ad42bc09": {
@@ -774,7 +774,7 @@
         "padding_top": 20,
         "padding_bottom": 20,
         "css_class": "instagram_container",
-        "custom_css": ""
+        "custom_css": ".instagram_container{\nborder-bottom:1.5px solid;\nwidth:100%;\nmax-width: initial;\n}"
       }
     }
   },
