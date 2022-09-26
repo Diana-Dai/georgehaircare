@@ -3061,7 +3061,8 @@ blockquote cite::before {
 }
 
 .title {
-  font-size: {{ settings.heading_size | append: 'px' }};
+  /* font-size: {{ settings.heading_size | append: 'px' }}; */
+  font-size: 2rem;
   font-weight: {{ settings.heading__font.weight }};
   line-height: 1.125;
   color: {{ settings.heading_color }};
@@ -3716,9 +3717,13 @@ blockquote cite::before {
   position: relative;
   margin: 0 auto;
   display: flex;
-{% comment %}   flex-wrap: wrap; {% endcomment %}
+  /* flex-wrap: wrap;  */
 }
-
+@media (max-width: 798.98px){
+  .container {
+    flex-wrap: wrap;
+  }
+}
 .related-blogs {
     position: relative;
     margin: 0 auto;
@@ -6458,7 +6463,7 @@ a.button--primary.button.is-large {
 .button--secondary,
 .action_button--secondary,
 a.button--secondary.button {
-  font-size: {{ btn_secondary_font_size }};
+  font-size: {{ btn_secondary_font_size }} !important;
   border-radius: {{ settings.button_secondary_border_radius | append: 'px' }};
   line-height: {{ btn_secondary_line_height }};
   width: {{ btn_secondary_width }};
@@ -6652,7 +6657,9 @@ a.button--add-to-cart.button.is-large {
   line-height: 1.25em;
   width: 100%;
 }
-
+.button--add-to-cart{
+  background-color: ;
+}
 .shopify-challenge__button {
   font-size: {{ btn_primary_font_size }};
   border-radius: {{ settings.button_primary_border_radius | append: 'px' }};
@@ -7598,7 +7605,10 @@ a.tag:hover {
 
 .ajax-cart {
   width: 100%;
-  font-size: {{ settings.dropdown_font_size | append: 'px' }};
+  /* font-size: {{ settings.dropdown_font_size | append: 'px' }}; */
+}
+.ajax-cart p {
+  font-size: 0.8rem;
   color: {{ text }};
   text-shadow: none;
   text-transform: {{ settings.dropdown_font_style }};

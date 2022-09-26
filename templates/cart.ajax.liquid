@@ -264,6 +264,10 @@
 
       {% comment %} Checkout {% endcomment %}
       <div class="ajax-cart__button-wrapper text-align-center">
+        <label style="text-transform: none;padding-top: 5px;display: inline-block;">
+          <input checked type="checkbox" name="properties[authority]" value="authority to leave parcel if receiver not available">
+          Authority to leave parcel if receiver not available
+        </label>
         {% if settings.go_to_checkout %}
           <button type="submit" name="checkout" class="ajax-cart__button button--add-to-cart button">
             {% if settings.show_lock_icon %}
@@ -289,5 +293,7 @@
       </div>
 
     </div>
+
+    {% render 'ajax-upsell' %}
   </form>
 </template>

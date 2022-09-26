@@ -295,12 +295,15 @@ window.PXUTheme.jsAjaxCart = {
     )
     .done(({ html, options }) => {
 
+      debugger;
       if (options.item_count > 0) {
         const itemList = $(html.content).find('.ajax-cart__list');
         const cartDetails = $(html.content).find('.ajax-cart__details-wrapper');
+        const progressBar = $(html.content).find('.progress-bar__container');
 
         $('.ajax-cart__list').replaceWith(itemList);
         $('.ajax-cart__details-wrapper').replaceWith(cartDetails);
+        $('.progress-bar__container').replaceWith(progressBar);
         $('.ajax-cart__empty-cart-message').addClass('is-hidden');
         $('.ajax-cart__form').removeClass('is-hidden');
         $('[data-ajax-cart-trigger]').addClass('has-cart-count');

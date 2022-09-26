@@ -76,6 +76,7 @@
     },
     "1660367950ca81d250": {
       "type": "index__collection-list",
+      "disabled": true,
       "blocks": {
         "16603679505e466e26-0": {
           "type": "collection",
@@ -122,6 +123,26 @@
         "show_gutter": true,
         "padding_top": 0,
         "padding_bottom": 15,
+        "animation": "none",
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "1664169882d3845cb3": {
+      "type": "index__featured-collection",
+      "settings": {
+        "title": "Build the HairDrobe of your Dreams",
+        "collection": "all-products",
+        "products_per": 3,
+        "mobile_products_per_row": "1",
+        "products_limit": 3,
+        "align_height": false,
+        "collection_height": 320,
+        "collection_style": "grid",
+        "width": "standard",
+        "show_gutter": true,
+        "padding_top": 41,
+        "padding_bottom": 20,
         "animation": "none",
         "css_class": "",
         "custom_css": ""
@@ -782,6 +803,7 @@
     "1660728154171fc048",
     "1557847890840",
     "1660367950ca81d250",
+    "1664169882d3845cb3",
     "1557099063267",
     "1557099139789",
     "1557848148448",

@@ -1,0 +1,33 @@
+<div class="ajax-cart__upsell">
+
+    <p class="ajax-cart__upsell_title">Frequently Bought Together</p>
+    
+    <div class="ajax-cart__upsell_inner">
+        {% for product in settings.ajax_upsell.products limit: 2%}
+            <div class="product-container">
+                <div class="product-inner">
+                    <div class="image-wrapper">
+                        <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{product.title}}">
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title">
+                            <p><strong>{{product.title}}</strong></p>
+                        </div>
+                        <div class="buttons-container">
+                            <div class="buttons-left">
+                                <p><strong>Only {{product.price | money}}</strong></p>
+                                <a href="{{product.url}}">Show Details</a>
+                            </div>
+                            <div class="add-to-cart">
+                                <form action="/cart/add">
+                                    <input name="id" type="hidden" value="{{product.selected_or_first_available_variant.id}}">
+                                </form>
+                                <button type="submit" data-label="Add to cart" data-add-to-cart-trigger="" class="ajax-submit button">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>

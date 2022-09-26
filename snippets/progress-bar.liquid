@@ -1,19 +1,22 @@
 {% assign free_shipping_value = 10000.000 %}
 {% assign 10_discount_value = 11000.000 %}
 {% assign 12_discount_value = 12000.000 %}
-{%- comment -%}{% assign cart_total = cart.total_price %}{%- endcomment -%}
-{% assign cart_total = 11400 %}
+{% assign cart_total = cart.total_price %}
 {% assign shipping_value_left = free_shipping_value | minus: cart_total %}
 {% assign 10_discount_left = 10_discount_value | minus: cart_total %}
 {% assign 12_discount_left = 12_discount_value | minus: cart_total %}
 
 {% if shipping_value_left > 0 %}
-    {%- assign progress_width = cart_total | divided_by: free_shipping_value | times: 100  -%}
+    {%- assign difference = free_shipping_value -%}
+    {%- assign percentage_left =  shipping_value_left | divided_by: difference  -%}
+    {%- assign percentage =  1 | minus: percentage_left -%}
+    {%- assign progress_width = percentage | times: 33.33 -%}
     {%- capture message -%}
+    <img src="https://www.amabattery.co.za/wpimages/wp4cb45f10.gif"> 
+
         Add
         <strong>{{ shipping_value_left | money }}</strong> to get
         <strong>free shipping</strong>
-        </p>
     {%- endcapture -%}
 {% elsif 10_discount_left > 0 %}
     {%- assign difference = 10_discount_value | minus: free_shipping_value -%}
@@ -21,10 +24,11 @@
     {%- assign percentage =  1 | minus: percentage_left -%}
     {%- assign progress_width = percentage | times: 33.33 | plus: 33.33  -%}
     {%- capture message -%}
+    <img src="https://www.amabattery.co.za/wpimages/wp4cb45f10.gif"> 
+
     Add
     <strong>{{ 10_discount_left | money }}</strong> to unlock
     <strong>10% OFF</strong>
-    </p>
     {%- endcapture -%}
 {% elsif 12_discount_left > 0 %}
 {%- assign difference = 12_discount_value | minus: 10_discount_value -%}
@@ -32,19 +36,24 @@
 {%- assign percentage =  1 | minus: percentage_left -%}
 {%- assign progress_width = percentage | times: 33.33 | plus: 66.66  -%}
 {%- capture message -%}
+<img src="https://www.amabattery.co.za/wpimages/wp4cb45f10.gif"> 
 Add
 <strong>{{ 12_discount_left | money }}</strong> to unlock
 <strong>12% OFF</strong>
-</p>
 {%- endcapture -%}
 {% else %}
 {%- assign progress_width = 100  -%}
+{%- capture message -%}
+<img src="https://media.giphy.com/media/1wX5TJZPqVw3HhyDYn/giphy.gif">
+<span>You've unlocked</span></p>
+<p><strong>Free shipping & 12% off today!</strong></p>
+{%- endcapture -%}
 {% endif %}
 <div class="progress-bar__container">
   <div class="progress-bar__top">
     <p class="ql-align-center">
-      <img src="https://www.amabattery.co.za/wpimages/wp4cb45f10.gif"> 
       {{message}}
+      </p>
   </div>
   <div
     class="progress-bar__middle"
@@ -82,7 +91,7 @@ Add
     </div>
     <div
       class="mu-absolute mu-transform mu-w-max"
-      style="left: 100%; width: fit-content; white-space: nowrap; color: rgb(44, 50, 59); --transform-translate-x: -50%;"
+      style="left: 100%; width: fit-content; white-space: nowrap; color: rgb(44, 50, 59); --transform-translate-x: -100%;"
     >
     12% OFF
     </div>
@@ -123,6 +132,8 @@ padding: 0;
         position: relative;
         display: flex;
         justify-content: space-between;
+        height: 10px;
+        margin-top: 5px;
     }
     .progress-bar__bottom .mu-transform{
         --transform-translate-x: 0;
