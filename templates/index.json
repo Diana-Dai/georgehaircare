@@ -781,7 +781,7 @@
         "9aa5a8d8-9711-4c01-b3e1-b1b2b38acf42": {
           "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
-            "heading_size": 20,
+            "heading_size": 30,
             "feed_width": 100,
             "html_area": ""
           }
@@ -791,9 +791,9 @@
         "9aa5a8d8-9711-4c01-b3e1-b1b2b38acf42"
       ],
       "settings": {
-        "width": "standard",
-        "padding_top": 20,
-        "padding_bottom": 20,
+        "width": "wide",
+        "padding_top": 0,
+        "padding_bottom": 0,
         "css_class": "instagram_container",
         "custom_css": ""
       }
