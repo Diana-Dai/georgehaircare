@@ -193,6 +193,9 @@ display:none;
     margin-top: 20px;
     border-top: 1.5px solid;
 }
+.product .custom_liquid ~ .product-form-container{
+  margin-top:0;
+}
   .header-sticky-wrapper label[for="mega-search"] a.navbar-link {
     padding-bottom: 0;
 }
