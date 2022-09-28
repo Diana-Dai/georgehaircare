@@ -184,9 +184,7 @@ display:none;
     object-fit: cover;
 }
 
-.product .is-beside-vertical-header {
-    background: #EC86D0;
-}
+.product .is-beside-vertical-header ,
 .product-cream .is-beside-vertical-header{
     background: #f8f0e3;
 }
