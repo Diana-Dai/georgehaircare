@@ -142,7 +142,7 @@ display:none;
 }*/
 .page .FAQ.jsFAQ {
     padding: 0 !important;
-    background: #897A27;
+    /* background: #897A27; */
 }
 .page .FAQ.jsFAQ .column-wrapper .faq--image {
     padding-left: 0;
@@ -170,10 +170,10 @@ display:none;
     max-width: 100%;
     width: 100%;
 }
-.page .FAQ.jsFAQ .column-wrapper .faq-accordion dt {
+/* .page .FAQ.jsFAQ .column-wrapper .faq-accordion dt {
     margin-left: 35px;
     margin-right: 35px;
-}
+} */
 .page .FAQ.jsFAQ .column-wrapper .faq--image .image-element__wrap {
     position: sticky;
     top: 0;
@@ -183,8 +183,16 @@ display:none;
     height: 100%;
     object-fit: cover;
 }
+
 .product .is-beside-vertical-header {
     background: #EC86D0;
+}
+.product-cream .is-beside-vertical-header{
+    background: #f8f0e3;
+}
+.product-cream .product-form-container{
+    margin-top: 20px;
+    border-top: 1.5px solid;
 }
   .header-sticky-wrapper label[for="mega-search"] a.navbar-link {
     padding-bottom: 0;

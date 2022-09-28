@@ -209,6 +209,9 @@
 <body
   class="
   template-{{template.name}}
+  {% if template contains 'product' %}
+    {{template.name}}
+  {% endif %}
     {%- if template.name == '404' -%}
       error-404
     {% else -%}
