@@ -188,7 +188,7 @@ display:none;
 .product-cream .is-beside-vertical-header{
     background: #f8f0e3;
 }
-.product .is-beside-vertical-header,
+.product .product-form-container,
 .product-cream .product-form-container{
     margin-top: 20px;
     border-top: 1.5px solid;
