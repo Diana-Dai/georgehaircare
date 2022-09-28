@@ -2755,7 +2755,7 @@ section.footer__extra-content.section:last-child .footer__content{
 
 .custom_liquid{
     margin-top: 20px;
-    border-bottom: 1.5px solid;
+/*     border-bottom: 1.5px solid; */
 }
 @media (min-width: 799px){
      .custom_liquid{
