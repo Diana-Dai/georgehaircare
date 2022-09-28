@@ -415,6 +415,7 @@
     },
     "166331273157af9b8d": {
       "type": "icon-sliders",
+      "disabled": true,
       "blocks": {
         "1663312731b3d12ab5-0": {
           "type": "logo_image",
