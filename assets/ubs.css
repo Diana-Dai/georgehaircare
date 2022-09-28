@@ -724,8 +724,8 @@ body.product section.section.is-width-wide {
 .newsection.section.better-section .for_mobile_only.image-with-text__wrapper {
     width: 100%!important;
     border-bottom: 1.5px solid;;
-    border-top: 1.5px solid;;
-    margin-top: 22px !important;
+    /* border-top: 1.5px solid;; */
+    /* margin-top: 22px !important; */
 }
  /*.newsection.section.better-section h3.image-with-text__heading.text-align-left.is-regular {
     width: 80%;
