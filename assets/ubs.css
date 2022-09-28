@@ -190,10 +190,6 @@ display:none;
 .product-cream .is-beside-vertical-header{
     background: #f8f0e3;
 }
-.product-cream .product-form-container{
-    margin-top: 20px;
-    border-top: 1.5px solid;
-}
   .header-sticky-wrapper label[for="mega-search"] a.navbar-link {
     padding-bottom: 0;
 }
@@ -201,6 +197,8 @@ display:none;
     display: flex;
     align-items: flex-end;
     padding-right: 3vw;
+    border-bottom: 1.5px solid;
+    padding-bottom: 20px;
 }
 .main-title_price .product-block--price .modal_price.subtitle span.money {
     margin-top: 0 !important;
@@ -2753,14 +2751,12 @@ section.footer__extra-content.section:last-child,
 section.footer__extra-content.section:last-child .footer__content{
     border-top: 0 !important;
 }
-
 .custom_liquid{
-    margin-top: 20px;
     border-bottom: 1.5px solid;
 }
 @media (min-width: 799px){
      .custom_liquid{
-        border-top: 1.5px solid;
+        /* border-top: 1.5px solid; */
     }
 }
 
