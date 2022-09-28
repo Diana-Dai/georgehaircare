@@ -7614,6 +7614,10 @@ a.tag:hover {
   text-transform: {{ settings.dropdown_font_style }};
   letter-spacing: {{ settings.dropdown_letter_spacing }};
 }
+.ajax-cart label{
+  font-size: 0.8rem;
+
+}
 .ajax-cart a,
 .ajax-cart a:active,
 .ajax-cart a:visited {
@@ -13232,7 +13236,7 @@ shopify-payment-terms {
 @media only screen and (max-width: 480px) {
     .footer__payment-methods {
       text-align: center;
-      justify-content: center;
+      justify-content: start;
     }
   }
 {%- elsif settings.footer_layout == 'classic' -%}
@@ -13269,7 +13273,7 @@ shopify-payment-terms {
 @media only screen and (max-width: 480px) {
     .footer__payment-methods {
       text-align: center;
-      justify-content: center;
+      justify-content: start;
     }
   }
 {%- elsif settings.footer_layout == 'promotional' -%}

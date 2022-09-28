@@ -12,7 +12,7 @@
     border-bottom: 2px solid;
   padding: 15px 22px !important;
  
-  margin-bottom: 0 !important;
+  /* margin-bottom: 0 !important; */
 }
 .Introducing-Section .image-with-text__heading {
     padding: 22px;
@@ -101,12 +101,12 @@
     order: -1;
     margin: 0;
 }
-.page-title,
+/* .page-title,
   body.page-about-banner .shopify-section.image-with-text.image-with-text-1 h3.image-with-text__heading.text-align-left.is-regular {
     font-size: 13vw;
     line-height: 13vw;
-}
-  body.page-about-banner .image-with-text__text.text-align-left.content p {
+} */
+  /* body.page-about-banner .image-with-text__text.text-align-left.content p {
     line-height: calc(1.5rem + 1.5vw);
     font-size: calc(.8rem + 1.5vw);
 }
@@ -117,7 +117,7 @@
   .page-the-never-ever-list .image-with-text__text.text-align-left.content p {
     line-height: calc(1.5rem + 1.5vw);
     font-size: calc(.8rem + 1.5vw);
-}
+} */
  .page-our-ingredients-list .Introducing-Section .maintitle.title{
     font-size: 13vw !important;
     line-height: 13vw;
