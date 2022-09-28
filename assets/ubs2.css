@@ -19,7 +19,7 @@
 }
 .page-our-ingredients-list .has-no-side-gutter .one-half {
     align-items: flex-start;
-  /*border-left: 2px solid; */
+  border-left: 1.5px solid;
 }
 .page-our-ingredients-list .maintitle {
     border-bottom: 2px solid;
@@ -72,6 +72,7 @@
   body.product .accordion_head-main.good-to-know {
     width: 100%;
     font-size: 5vw;
+    padding-left: 22px;
   }
  .page-what-we-stand-for section.footer__content.section.is-width-wide.has-background.has-padding-top.has-padding-bottom {
     border-top: 1px solid #000000 !important;
@@ -333,6 +334,7 @@ body.collection .collection__main .medium-down--one-half {
 body.page-about-banner .shopify-section.image-with-text.image-with-text-1 {
     border-right: 0;
 }
+.template-article .related-blogs .image-element__wrap,
 body.blog .image-element__wrap {
     max-height: 14em !important;
 }
