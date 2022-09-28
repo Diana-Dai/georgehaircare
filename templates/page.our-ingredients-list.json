@@ -1,1 +1,87 @@
-{"sections":{"banner":{"type":"banner","disabled":true,"settings":{"image":"shopify:\/\/shop_images\/George_Hair_2203_1.jpg","image_darken":false,"subtitle":"Not found at George","width":"wide","banner_height":"medium","padding_top":0,"padding_bottom":0,"css_class":"","custom_css":""}},"main":{"type":"page-content__main","disabled":true,"settings":{"show_heading":false,"heading_alignment":"left","width":"standard","padding_top":27,"padding_bottom":28,"css_class":"","custom_css":""}},"1662442993281aa6e4":{"type":"index__image-with-text","blocks":{"1662442993a6e8c1d8-1":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Screenshot_2.png","image_crop":"none","image_link":""}},"1662442993a6e8c1d8-2":{"type":"text","settings":{"title":"Introducing the Hall of Fame of Hair Heroes:","heading_size":"small","text":"<p><strong>SHEA BUTTER<\/strong>' mmm butter. Shea rs your scalp healer protector'. and is packed with anti-inflammatory properties to help with dry. damaged scalps. Don't be fooled by the 'butter' bit though:Ns nourishing ingredient won't be blocking your pores or leaving you fooling greasy. Rest ensured knowing you're giving your scalp good lovire with thin vitamin A and E. essential fatty acid-filled angel.<br\/><br\/>FLAXSEED OIL: Imagine If your hair had the flexibility& an olympic gymnast.Imagine no more. Flaxseed orl is a rich source of vitamin E. BE B2 (heh. now Mt picturing Bananas in PyArmis). B6 and biotin - basically the A.squad in elasticity. Your heir will be bending over backwards (sans breakages) in no time. <br\/><br\/>KAKADU PLUM: need moisture and hydration? Better invite kakadu plum to the party then. Kakadu plus wit brig elastin and collagen as es (who rocks up to a<br\/>party empty handed? Not KP). At the end of the night (or your shower). your hair will go from dry and lifeless to totally cranking the volume and shining like a disco bail. Yup, definitely inviting kakadu plum<br\/><br\/>HYDROLYSED OUINOA: quinoa Isn't just for your sal adl Ou inoa is a protein-rich seed that looooooves hair. Its been used throughout history (like. ancient hmes) for it's hair <\/p>","button_label":"","link":"","button_style":"button--primary","title1":"","heading_size1":"regular","text1":"","button_label1":"","link1":"","title11":"","titlegeorge":"","background":"rgba(0,0,0,0)","text_color":"rgba(0,0,0,0)","alignment":"left","vertical_position":"center"}}},"block_order":["1662442993a6e8c1d8-1","1662442993a6e8c1d8-2"],"settings":{"main_title":"OUR INGREDIENTS LIST","font-size":50,"width":"wide","show_gutter":false,"padding_top":0,"padding_bottom":0,"animation":"none","css_class":"Introducing-Section","custom_css":""}}},"order":["banner","main","1662442993281aa6e4"]}
+{
+  "sections": {
+    "banner": {
+      "type": "banner",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/George_Hair_2203_1.jpg",
+        "image_darken": false,
+        "subtitle": "Not found at George",
+        "width": "wide",
+        "banner_height": "medium",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "main": {
+      "type": "page-content__main",
+      "disabled": true,
+      "settings": {
+        "show_heading": false,
+        "heading_alignment": "left",
+        "width": "standard",
+        "padding_top": 27,
+        "padding_bottom": 28,
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "1662442993281aa6e4": {
+      "type": "index__image-with-text",
+      "blocks": {
+        "1662442993a6e8c1d8-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2.png",
+            "image_crop": "none",
+            "image_link": ""
+          }
+        },
+        "1662442993a6e8c1d8-2": {
+          "type": "text",
+          "settings": {
+            "title": "Introducing the Hall of Fame of Hair Heroes:",
+            "heading_size": "small",
+            "text": "<p><strong>SHEA BUTTER:<\/strong> mmm butter. Shea is your scalp healer protector, and is packed with anti-inflammatory properties to help with dry, damaged scalps. Don’t be fooled by the ‘butter’ bit though. This nourishing ingredient won’t be blocking your pores or leaving you feeling greasy. Rest assured knowing you’re giving your scalp good lovin’ with this vitamin A and E, essential fatty acid-filled angel.<\/p><p><strong>FLAXSEED OIL:<\/strong> imagine if your hair had the flexibility of an olympic gymnast. Imagine no more. Flaxseed oil is a rich source of vitamin E, B1, B2, B6 and biotin – basically the A-squad in elasticity. Your hair will be bending over backwards (sans breakages) in no time.<\/p><p><strong>KAKADU PLUM:<\/strong> need moisture and hydration? Better invite kakadu plum to the party then. Kakadu plum will bring elastin and collagen as gifts (who rocks up to a party empty handed? Not KP). At the end of the night (or your shower), your hair will go from dry and lifeless to totally cranking the volume and shining like a disco ball. Yup, definitely inviting kakadu plum. <\/p><p>We’re really proud that our kakadu plum is sourced in an environmentally, socially and ethically responsible manner.<\/p><p><strong>HYDROLYSED QUINOA:<\/strong> quinoa isn’t just for your salad! Quinoa is a protein-rich seed that looooooooves hair. It’s been used throughout history (like, ancient times) for it’s hair cleansing and healing properties. Quinoa is pretty badass when it comes to growing in harsh environments, totally thriving in poor soil and is resistant to frost and drought. Strengthening your hair and the soil at the same time. Win-win!<\/p><p><strong>COCONUT OIL, <\/strong><em><strong>Cocos Nucifera<\/strong><\/em><strong>:<\/strong> ummm yum-town. Another tasty ingredient that’s good for your bod and your noggin. We don’t blame you if you want to put it in your face first, but hear us out. This cute little thing could be old mate, kakadu plum’s twin – obsessed with locking in moisture, helping your scalp with any itchy, dry bits (dandruff, be gone!), and repairing your hair one strand at a time. After coconut oil is done, you’ll be wondering where the frizzy bits went (home, with coconut oil).<\/p><p><strong>JOJOBA OIL, <\/strong><em><strong>Simmondsia Chinensis<\/strong><\/em><strong>:<\/strong> comes from the jojoba plant and is a superhero ingredient thanks to its anti-fungal and antibacterial properties that can help to repair and restore your scalp (especially if it’s a bit on the sensitive side and experiences inflammation). Packed with vitamin E and heaps of antioxidants, it's healing powers benefit breaking or damaged strands. <\/p><p>Our jojoba oil has an added level of fanciness. It’s single origin – just like fancy coffee beans.<\/p><p>OUR COMMITMENT<\/p><p>We know we can do better, and just like our commitment to finding and using better packaging [add link to about &gt; what is your packaging made from], we’re committed to applying the same level of rigour to our ingredients. We’re working hard to ensure this entire list will one day show a big ol’ fair trade, single source or single farm badge against every single ingredient. Lots of small steps towards making a bigger and better impact. Watch this space.<\/p>",
+            "button_label": "",
+            "link": "",
+            "button_style": "button--primary",
+            "title1": "",
+            "heading_size1": "regular",
+            "text1": "",
+            "button_label1": "",
+            "link1": "",
+            "title11": "",
+            "titlegeorge": "",
+            "background": "rgba(0,0,0,0)",
+            "text_color": "rgba(0,0,0,0)",
+            "alignment": "left",
+            "vertical_position": "center"
+          }
+        }
+      },
+      "block_order": [
+        "1662442993a6e8c1d8-1",
+        "1662442993a6e8c1d8-2"
+      ],
+      "settings": {
+        "main_title": "OUR INGREDIENTS LIST",
+        "font-size": 50,
+        "width": "wide",
+        "show_gutter": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "animation": "none",
+        "css_class": "Introducing-Section",
+        "custom_css": ""
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "main",
+    "1662442993281aa6e4"
+  ]
+}
