@@ -325,7 +325,7 @@
             "background": "#f8f0e3",
             "text_color": "rgba(0,0,0,0)",
             "alignment": "left",
-            "vertical_position": "end"
+            "vertical_position": "start"
           }
         },
         "1557867440195-0": {
