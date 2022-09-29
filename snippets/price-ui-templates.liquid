@@ -96,7 +96,7 @@
 {%- elsif template == 'price-ui' -%}
   <span class="price {% if compare_at_price != blank and compare_at_price != false -%}price--sale{%- endif -%}" data-price>{%- if price != blank -%}{{- price -}}{%- endif -%}</span>
   {%- if compare_at_price != false -%}<span class="compare-at-price" data-compare-at-price>{%- if compare_at_price != blank -%}{{- compare_at_price -}}{%- endif -%}</span>{%- endif -%}
-  {%- if unit_pricing != false -%}<span class="unit-pricing" data-unit-pricing>{%- if unit_pricing != blank -%}{{- unit_pricing -}}{%- endif -%}</span>{%- endif -%}
+  {%- if unit_pricing != false and unit_pricing != blank -%}<span class="unit-pricing" data-unit-pricing>{{- unit_pricing -}}</span>{%- endif -%}
 {%- elsif template == 'price-ui-badge' -%}
   <div class="sale-sticker thumbnail-sticker sticker-{{i}}"><span class="sticker-text" data-badge>{%- if badge != blank -%}{{- badge -}}{%- endif -%}</span></div>
 {%- endif -%}

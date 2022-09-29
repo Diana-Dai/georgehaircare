@@ -32,16 +32,16 @@
 {% endcomment %}
 <footer class="footer__container {{ css_class }}">
   <section class="footer__content
-                                                                                                section
-                                                                                                is-width-wide
-                                                                                                has-background
-                                                                                                has-padding-top
-                                                                                                has-padding-bottom">
+                                                                                                                  section
+                                                                                                                  is-width-wide
+                                                                                                                  has-background
+                                                                                                                  has-padding-top
+                                                                                                                  has-padding-bottom">
     <div class="container has-limit is-justify-space-between">
       {% for block in section.blocks %}
         <div id="shopify-section-{{ block.id }}" class="footer__block block__{{ block.id }} block__{{ block.type | downcase | replace: '_', '-' }}
-                                                                                                                                                      {% render 'column-width', value: section.blocks.size %}
-                                                                                                                                                      medium-down--one-whole column" {{ block.shopify_attributes }}>
+                                                                                                                                                                                    {% render 'column-width', value: section.blocks.size %}
+                                                                                                                                                                                    medium-down--one-whole column" {{ block.shopify_attributes }}>
           {% if block.type == 'logo' %}
             {% comment %}
               Logo and text
@@ -50,10 +50,10 @@
               <a href="{{ routes.root_url }}" title="{{ shop.name }}" class="footer__logo-wrapper has-padding-bottom is-{{ block.settings.size }}">
                 {% if block.settings.logo %}
                   {% render 'image-element',
-                                       image: block.settings.logo,
-                                       alt: block.settings.logo.alt,
-                                       additional_classes: 'footer__logo'
-                               %}
+                                          image: block.settings.logo,
+                                          alt: block.settings.logo.alt,
+                                          additional_classes: 'footer__logo'
+                                  %}
                 {% else %}
                   <h2 class="footer__heading">{{ shop.name }}
                   </h2>
@@ -70,23 +70,23 @@
             </div>
 
           {% elsif block.type == 'logo_list' %}
-            <div>
+            <div class="logo_list">
               {% if block.settings.logo %}
-                <div style="width:{{block.settings.logo_width}}vw;">
+                <div class="image__wrapper">
                   {% render 'image-element',
-                                      image: block.settings.logo,
-                                      alt: block.settings.logo.alt,
-                                      additional_classes: 'footer__logo'
-                              %}
+                                         image: block.settings.logo,
+                                         alt: block.settings.logo.alt,
+                                         additional_classes: 'footer__logo'
+                                 %}
                 </div>
               {% endif %}
               {% if block.settings.logo_2 %}
-                <div style="width:{{block.settings.logo2_width}}vw;margin-top:20px;">
+                <div class="image__wrapper">
                   {% render 'image-element',
-                          image: block.settings.logo_2,
-                          alt: block.settings.logo_2.alt,
-                          additional_classes: 'footer__logo'
-                        %}
+                             image: block.settings.logo_2,
+                             alt: block.settings.logo_2.alt,
+                             additional_classes: 'footer__logo'
+                           %}
                 </div>
               {% endif %}
             </div>
@@ -142,10 +142,10 @@
             {% endif %}
 
             {% render 'newsletter-form',
-                                   type: 'block',
-                                   display_first_name: block.settings.display_first_name,
-                                   display_last_name: block.settings.display_last_name
-                           %}
+                                      type: 'block',
+                                      display_first_name: block.settings.display_first_name,
+                                      display_last_name: block.settings.display_last_name
+                              %}
 
             {% if block.settings.social_icons_footer %}
               <div class="has-padding-bottom has-padding-top">
@@ -163,20 +163,20 @@
         <div class="one-whole column">
           <div class="footer-menu__disclosure footer-classic__disclosure">
             {% render 'localization-switcher',
-                           additional_classes: 'footer-menu__disclosure is-hidden-medium is-hidden-mobile-only',
-                           id: 'footer__selector-form',
-                           currency_selector: currency_selector,
-                           locale_selector: locale_selector,
-                           show_currency: section.settings.show_currency_selector
-                         %}
+                              additional_classes: 'footer-menu__disclosure is-hidden-medium is-hidden-mobile-only',
+                              id: 'footer__selector-form',
+                              currency_selector: currency_selector,
+                              locale_selector: locale_selector,
+                              show_currency: section.settings.show_currency_selector
+                            %}
             {%
-                           render 'localization-switcher',
-                           id: 'footer__selector-form--mobile',
-                           additional_classes: 'selectors-form--mobile is-hidden-desktop-only',
-                           currency_selector: currency_selector,
-                           locale_selector: locale_selector,
-                           show_currency: settings.show_currency_selector
-                         %}
+                              render 'localization-switcher',
+                              id: 'footer__selector-form--mobile',
+                              additional_classes: 'selectors-form--mobile is-hidden-desktop-only',
+                              currency_selector: currency_selector,
+                              locale_selector: locale_selector,
+                              show_currency: settings.show_currency_selector
+                            %}
           </div>
         </div>
       {% endif %}
@@ -309,27 +309,16 @@
           {
             "type": "header",
             "content": "Logo"
-          },
-          {
+          }, {
             "type": "image_picker",
             "id": "logo",
             "label": "Logo",
             "info": "500 x 200px recommended"
-          },
-          {
-            "type": "number",
-            "id": "logo_width",
-            "label": "Logo width - vw"
-          },
-          {
+          }, {
             "type": "image_picker",
             "id": "logo_2",
             "label": "Logo 2",
             "info": "500 x 200px recommended"
-          }, {
-            "type": "number",
-            "id": "logo2_width",
-            "label": "Logo2 width - vw"
           }
         ]
       },

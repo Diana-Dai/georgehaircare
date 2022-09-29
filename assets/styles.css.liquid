@@ -3690,6 +3690,12 @@ blockquote cite::before {
   width: 100%;
   min-width: 1293px;
 }
+@media(max-width: 798.98px) {
+  .section.is-width-wide {
+    /* width: 100%; */
+    min-width: initial;
+  }
+}
 .section.is-width-wide .container.has-limit {
   max-width: 1200px;
   width: 95%;
@@ -14418,6 +14424,7 @@ h1.header__logo-text > a:hover {
 }
 .image-with-text__heading.is-large {
   /* font-size: {{ settings.heading_size | times: 1.5 | floor | append: 'px' }}; */
+  font-size: 2.6rem;
 }
 
 .image-with-text__link {

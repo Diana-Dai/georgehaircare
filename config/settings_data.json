@@ -498,6 +498,15 @@
               "social_icons_footer": false
             }
           },
+          "10169bf3-2629-41c5-9034-61bcdaffc463": {
+            "type": "logo_list",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/PETA_Animal_Test_Free_Vegan_BW_v1.png",
+              "logo_width": 6,
+              "logo_2": "shopify:\/\/shop_images\/1ftp_Primary_Horizontal_Black-1.png",
+              "logo2_width": 6
+            }
+          },
           "1557872829946": {
             "type": "logo",
             "settings": {
@@ -512,6 +521,7 @@
           "1557856396674",
           "1557855119364",
           "1564688369013",
+          "10169bf3-2629-41c5-9034-61bcdaffc463",
           "1557872829946"
         ],
         "settings": {
