@@ -17,7 +17,7 @@
     "mobile_menu_background_color": "#e16749",
     "mobile_menu_opacity": 100,
     "mobile_menu_link_color": "#000000",
-    "mobile_menu_link_hover_color": "#89abe3",
+    "mobile_menu_link_hover_color": "#f9c764",
     "button_primary_padding": "large",
     "button_primary_bg_color": "#e16749",
     "button_primary_bg_color_transparency": 100,
@@ -502,9 +502,7 @@
             "type": "logo_list",
             "settings": {
               "logo": "shopify:\/\/shop_images\/PETA_Animal_Test_Free_Vegan_BW_v1.png",
-              "logo_width": 6,
-              "logo_2": "shopify:\/\/shop_images\/1ftp_Primary_Horizontal_Black-1.png",
-              "logo2_width": 6
+              "logo_2": "shopify:\/\/shop_images\/1ftp_Primary_Horizontal_Black-1.png"
             }
           },
           "1557872829946": {
