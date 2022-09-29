@@ -313,11 +313,11 @@
             "heading_size": "large",
             "text": "<p>We're calling it. Better Hair Days Mask is like your holy grail face moisturiser, but for your hair. Made from a powerful emulsion of antioxidants and replenishing oils to nourish to restore your hair's natural gloss. Don't let the lightweight texture fool you. Prepare for hydration that won't weigh you and your crown down.<\/p>",
             "button_label": "SHOP THE MASK NOW",
-            "link": "",
+            "link": "https:\/\/www.georgehaircare.com\/products\/better-hair-days-hair-mask",
             "button_style": "button--secondary",
             "title1": "",
             "heading_size1": "small",
-            "text1": "<p><strong>GEORGE IS MADE FOR PEOPLE WHO PREFER LOW MAINTENANCE, SOME MAINTENANCE, AND FOR PEOPLE WHO LOVE TO GO ALL OUT WHEN IT COMES TO HAIR.<\/strong><\/p><p><strong>FOR ANYONE AND EVERONE WHO IS READY TO DITCH THE DRYING, FRIZZING, SOUL-SUCKING, HAVOC-MAKING SOAP AND CHEMICAL-FILLED GARBAGE.<\/strong><\/p>",
+            "text1": "<p><strong>WE'VE COMBINED HARDWORKING INGREDIENTS THAT ACTUALLY WORK, SO YOU CAN SPEND LESS TIME DOING YOR HAIR, AND MORE TIME DOING WHATEVER YOU WANT TO DO (THAT'S NONE OF OUR BUSINESS, YOU DO YOU.). <\/strong><\/p><p><strong>PREPARE YOURSELF FOR BETTER HAIR DAYS.<\/strong><\/p>",
             "button_label1": "",
             "link1": "",
             "title11": "",
@@ -415,6 +415,7 @@
     },
     "166331273157af9b8d": {
       "type": "icon-sliders",
+      "disabled": true,
       "blocks": {
         "1663312731b3d12ab5-0": {
           "type": "logo_image",

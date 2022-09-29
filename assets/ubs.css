@@ -184,9 +184,7 @@ display:none;
     object-fit: cover;
 }
 
-.product .is-beside-vertical-header {
-    background: #EC86D0;
-}
+.product .is-beside-vertical-header ,
 .product-cream .is-beside-vertical-header{
     background: #f8f0e3;
 }
@@ -453,7 +451,7 @@ body.article .article.blog-card.card {
 
 /*08/09/2022*/
 .header-sticky-wrapper.is-flex.is-justify-left.is-flex-column.vertical-header__content .vertical-header__menu-items.header__menu.menu-alignment--left.dropdown-click--false {
-    padding: 1.2rem 0 8rem;
+    padding: 1.3rem 0 8rem;
 }
 .index .dynamic-sections .shopify-section.video-section.jsVideo.overlaid-header-option .section.is-width-wide {
     width: 100%;
@@ -2751,9 +2749,6 @@ section.footer__extra-content.section:last-child,
 section.footer__extra-content.section:last-child .footer__content{
     border-top: 0 !important;
 }
-.custom_liquid{
-    border-bottom: 1.5px solid;
-}
 @media (min-width: 799px){
      .custom_liquid{
         /* border-top: 1.5px solid; */
@@ -2873,8 +2868,8 @@ section.footer__extra-content.section:last-child .footer__content{
     display: none !important;
 } */
 #insta-feed .instafeed-container{
-   width: 33.3% !important;
-     padding-top: 33.3% !important;
+   width: 25% !important;
+     padding-top: 25% !important;
 }
 .instagram_container{
     max-width: initial !important;
