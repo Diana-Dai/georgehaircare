@@ -46,10 +46,10 @@
       "type": "fallback_image_banner",
       "settings": {
         "image_darken": false,
-        "width": "standard",
-        "banner_height": "small",
-        "padding_top": 20,
-        "padding_bottom": 20,
+        "width": "wide",
+        "banner_height": "medium",
+        "padding_top": 0,
+        "padding_bottom": 0,
         "css_class": "",
         "custom_css": ""
       }
