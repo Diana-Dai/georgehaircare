@@ -33,9 +33,9 @@
         "show_border": true,
         "button_label": "Read more",
         "button_type": "button--primary",
-        "width": "wide",
+        "width": "standard",
         "padding_top": 20,
-        "padding_bottom": 20,
+        "padding_bottom": 10,
         "animation": "none",
         "css_class": "",
         "custom_css": ""
