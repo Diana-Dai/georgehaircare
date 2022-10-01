@@ -45,7 +45,7 @@
     "banner": {
       "type": "fallback_image_banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/George_Hair_1792_1_cropped_f887ad5e-15e8-47a9-b59d-d9a8c09d9d27.jpg",
+        "image": "shopify:\/\/shop_images\/Screenshot_1.png",
         "image_darken": false,
         "width": "wide",
         "banner_height": "medium",
