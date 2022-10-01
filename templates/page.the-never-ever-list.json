@@ -35,7 +35,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/george_hair_1706.jpg",
-            "image_crop": "none",
+            "image_crop": "left",
             "image_link": ""
           }
         },
