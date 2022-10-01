@@ -483,18 +483,18 @@
               "social_icons_footer": false
             }
           },
-          "1557855119364": {
-            "type": "link_list",
-            "settings": {
-              "menu": "about",
-              "social_icons_footer": false
-            }
-          },
           "1564688369013": {
             "type": "link_list",
             "disabled": true,
             "settings": {
               "menu": "",
+              "social_icons_footer": false
+            }
+          },
+          "1557855119364": {
+            "type": "link_list",
+            "settings": {
+              "menu": "about",
               "social_icons_footer": false
             }
           },
@@ -517,8 +517,8 @@
         },
         "block_order": [
           "1557856396674",
-          "1557855119364",
           "1564688369013",
+          "1557855119364",
           "10169bf3-2629-41c5-9034-61bcdaffc463",
           "1557872829946"
         ],
