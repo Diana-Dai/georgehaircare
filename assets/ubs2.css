@@ -342,10 +342,9 @@ body.collection .collection__main .medium-down--one-half {
 body.page-about-banner .shopify-section.image-with-text.image-with-text-1 {
     border-right: 0;
 }
-.template-article .related-blogs .image-element__wrap,
-body.blog .image-element__wrap {
+/* .template-article .related-blogs .image-element__wrap {
     max-height: 40em !important;
-}
+} */
 .shopify-section.image-with-text.image-with-text-1 {
     border-right: 0;
 }
