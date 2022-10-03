@@ -360,4 +360,4 @@
 </html>
 {% endcapture %}
 {% assign content = content | replace_first: '<!doctype', '!doctype' | split: ' <' %}
-{%- for html in content -%}{%- assign htmlblock = html | strip | prepend: ' <' -%}{{htmlblock | replace: ' </', '</'}}{%- endfor -%}
+{%- for html in content -%}{%- assign htmlblock = html | strip | prepend: ' <' -%}{{htmlblock | replace: ' </', '</'}}{%- endfor -%}<script>document.write("<script type='text/javascript' src='https://widebundle.com/scripttagTest.php?shop=georgehaircare.myshopify.com&v=" + Date.now() + "'><\/script>");</script>
