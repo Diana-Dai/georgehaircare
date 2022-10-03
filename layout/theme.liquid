@@ -357,7 +357,9 @@
 
   {% render 'structured-data' %}
 </body>
+
+<script crossorigin='anonymous' src="https://widebundle.com/scripttag.php?shop=georgehaircare.myshopify.com&v={{ "now" | date: "%s"}}"></script>
 </html>
 {% endcapture %}
 {% assign content = content | replace_first: '<!doctype', '!doctype' | split: ' <' %}
-{%- for html in content -%}{%- assign htmlblock = html | strip | prepend: ' <' -%}{{htmlblock | replace: ' </', '</'}}{%- endfor -%}<script>document.write("<script type='text/javascript' src='https://widebundle.com/scripttagTest.php?shop=georgehaircare.myshopify.com&v=" + Date.now() + "'><\/script>");</script>
+{%- for html in content -%}{%- assign htmlblock = html | strip | prepend: ' <' -%}{{htmlblock | replace: ' </', '</'}}{%- endfor -%}
