@@ -13,7 +13,7 @@
     display: none !important;
 }
 .better-section .image-element__wrap,.image-with-text-3 .image-element__wrap {
-    background-size: 100% !important;
+    background-size: cover !important;
     height: 369px !important;
     background-repeat: no-repeat !important;
 }

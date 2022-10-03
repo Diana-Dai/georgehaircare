@@ -3067,6 +3067,11 @@ blockquote cite::before {
   line-height: 1.125;
   color: {{ settings.heading_color }};
 }
+/* @media only screen and (max-width: 798px){
+  .title {
+    font-size: 4rem;
+  }
+} */
 .title strong {
   font-weight: inherit;
   color: inherit;
@@ -3732,7 +3737,7 @@ blockquote cite::before {
 }
 .related-blogs {
     position: relative;
-    margin: 0 auto;
+    margin: 0 10px;
     display: block;
 }
 .container .column,
@@ -16867,11 +16872,11 @@ ul.faceted-filter-group-display__list {
 .blog-card .meta-info > ul:not(:last-child) {
   margin-bottom: 1rem;
 }
-@media only screen and (min-width: 799px) {
+/* @media only screen and (min-width: 799px) {
   .blog-card .image-element__wrap {
     max-height: 15rem;
   }
-}
+} */
 .blog-card .media-content {
   font-size: {{ settings.heading_size | append: 'px' }};
 }

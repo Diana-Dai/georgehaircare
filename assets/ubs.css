@@ -197,6 +197,7 @@ display:none;
     padding-right: 3vw;
     border-bottom: 1.5px solid;
     padding-bottom: 20px;
+    padding-top: 20px;
     /* flex-wrap: wrap; */
 }
 .main-title_price .product-block--price .modal_price.subtitle span.money {
@@ -673,10 +674,15 @@ body.product section.section.is-width-wide {
     display:block;
 }
 .shopify-section.image-with-text.image-with-text-1 .image-with-text__image-column.image-with-text__column.one-half.medium-down--one-whole.column.is-flex.is-align-center.has-image-crop.image-crop--center {
-    width: 92%;
-    margin: 23px auto 0;
+    margin-top: 20px !important;
     /* border-left: 0; */
+    Width:100%;
 }
+.shopify-section.image-with-text.image-with-text-1 .image-with-text__image-column.image-with-text__column.one-half.medium-down--one-whole.column.is-flex.is-align-center.has-image-crop.image-crop--center .image-element__wrap {
+    width: 100%;
+    margin: 0 20px 0 !important;
+}
+
 .shopify-section.image-with-text.image-with-text-1 .image-with-text__text-column.image-with-text__column.one-half.medium-down--one-whole.column.has-padding-left.has-padding-right.has-background.is-flex.is-flex-wrap.is-justify-left {
     width: 100%;
     margin: 0 auto;
@@ -781,9 +787,9 @@ body.product section.section.is-width-wide {
   .shopify-section.image-with-text.image-with-text-1 .image-with-text__text-column.image-with-text__column.one-half.medium-down--one-whole.column.has-padding-left.has-padding-right.has-background.is-flex.is-flex-wrap.is-justify-left.is-align-start .buttons.is-left a.button.button--secondary {
     font-size: 10px;
 }
-  .shopify-section.FAQ.jsFAQ h2.title.faq-title {
+  /* .shopify-section.FAQ.jsFAQ h2.title.faq-title {
     font-size: 40px;
-}
+} */
   /* body.page-what-we-stand-for .maintitle {
     font-size: 50px!important;
     line-height: 50px !important;
@@ -866,13 +872,13 @@ section.ajax-cart.ajax-cart--drawer p.ajax-cart__cart-title.has-margin-bottom {
     margin: 0 auto;
 }
 .shopify-section.FAQ.jsFAQ h2.title.faq-title {
-    font-size: calc(3.5rem + 1vw);
-    line-height: calc(4rem + 1vw);
+    /* font-size: calc(3.5rem + 1vw);
+    line-height: calc(4rem + 1vw); */
     padding: 22px;
     margin-bottom: 0;
 }
 .shopify-section.FAQ.jsFAQ dl.faq-accordion.accordion-icon--plus_and_minus dt {
-    border-top: 1.5px solid; #000000;
+    border-top: 1.5px solid; 
 }
 .customers-login .login.one-half {
     display: block;
@@ -1015,9 +1021,9 @@ body.index .shopify-section.collection-list .section.section.is-width-standard.h
     max-width: 100% !important;
 }
 @media (max-width: 798.98px){
-.page-faq .shopify-section.FAQ.jsFAQ h2.title.faq-title {
+/* .page-faq .shopify-section.FAQ.jsFAQ h2.title.faq-title {
     font-size: 65px;
-}
+} */
   .page-faq .one-half.medium-down--one-whole.column.faq.faq--image.faq__column-2 {
     padding-top: 0;
 }
@@ -1136,6 +1142,7 @@ body.blog .card-image.blog-card__image .image-element__wrap {
  .product .product-main .product__information .accordion dt a {
     /* font-size: 20px !important; */
     padding: 15px;
+    padding-right: 24px;
 }
   .product small.right.plusminus {
     right: 20px;
@@ -1288,9 +1295,9 @@ body.blog .excerpt.excerpt-length-sm.has-margin-bottom {
   .shopify-section.image-with-text.image-with-text-1 {
     border-left: 1.5px solid;;
   }
-  .shopify-section.image-with-text.image-with-text-1 .image-element__wrap img.transition--blur-up.image-with-text__image.lazyautosizes.ls-is-cached.lazyloaded {
+  /* .shopify-section.image-with-text.image-with-text-1 .image-element__wrap img.transition--blur-up.image-with-text__image.lazyautosizes.ls-is-cached.lazyloaded {
     border: 1.5px solid;
-}
+} */
   .shopify-section.icon-with-text-column {
    /* border-left: 2px solid;*/
     border-right: none;
@@ -1309,7 +1316,7 @@ body.blog .excerpt.excerpt-length-sm.has-margin-bottom {
 }*/
   .shopify-section.image-with-text.image-with-text-1 .image-with-text__text-column.image-with-text__column.one-half.medium-down--one-whole.column.has-padding-left.has-padding-right.has-background.is-flex.is-flex-wrap.is-justify-left.is-align-start .buttons.is-left a.button.button--secondary {
     background-color: #e26849;
-    padding: 19px 8px;
+    /* padding: 19px 8px; */
     font-size: 27px;
   }
   .shopify-section.rich-text .columns.one-whole {
@@ -1330,7 +1337,7 @@ body.blog .excerpt.excerpt-length-sm.has-margin-bottom {
   .page-about-banner .shopify-section.image-with-text.image-with-text-1 {
     border: 1.5px solid;
     border-left: none;
-    border-top: 1.5px solid;;
+    border-top: none;
   }
   .page-about-banner .image-with-text .image-with-text__column {
     border-left: none;
@@ -1380,10 +1387,10 @@ body.page-faq .page-faq__column-wrap.container.column-wrapper .one-half.medium-d
     font-size: 72px;
     line-height: 72px;
 } */
-  .product .accordion-two-section {
-    border-top: 1.5px solid;;
+  /* .product .accordion-two-section {
+    border-bottom: 1.5px solid;;
     
-}
+} */
 
 }
 /*15/09/22*/
@@ -1604,6 +1611,7 @@ body.page-faq section.footer__content.section.is-width-wide.has-background.has-p
 .page-our-ingredients-list .image-with-text__text-column.image-with-text__column.one-half.medium-down--one-whole.column.has-padding-left.has-padding-right.is-flex.is-flex-wrap.is-justify-left.is-align-center {
     padding: 0;
     padding-bottom: 27px !important;
+    
 }
 body.page-the-never-ever-list .image-with-text__text-column.image-with-text__column.one-half.medium-down--one-whole.column.has-padding-left.has-padding-right.has-background.is-flex.is-flex-wrap.is-justify-left.is-align-center {
     padding: 0;
@@ -1630,6 +1638,7 @@ body.page-the-never-ever-list .image-with-text__text-column.image-with-text__col
 .page-the-never-ever-list .maintitle,
 .page-what-we-stand-for .maintitle {
     border-bottom: 1.5px solid;;
+    border-top: 1.5px solid;;
     padding: 22px!important;
     /* font-size: 63px !important;
     line-height: 63px; */
@@ -1757,8 +1766,8 @@ body.page-about-banner .shopify-section.image-with-text.image-with-text-1 h3.ima
     padding: 1rem 0 4rem;
 }
   .shopify-section.FAQ.jsFAQ h2.title.faq-title {
-    font-size: 44px;
-    line-height: 60px;
+    /* font-size: 44px;
+    line-height: 60px; */
     padding: 22px;
     margin-bottom: 0;
 }
@@ -1861,10 +1870,10 @@ section.section.flexslider.mobile-slider-Home.is-width-wide.has-no-side-gutter.h
   .page-what-we-stand-for .image-with-text__image-column.image-with-text__column.one-half.medium-down--one-whole.column.is-flex.is-align-center.image-crop--none {
     padding: 22px !important;
 }
-.page-faq .shopify-section.FAQ.jsFAQ h2.title.faq-title {
+/* .page-faq .shopify-section.FAQ.jsFAQ h2.title.faq-title {
     font-size: 14vw;
     line-height: 14vw;
-}
+} */
   body.page-faq .shopify-section.FAQ.jsFAQ section.section.is-width-standard.has-gutter-enabled {
     border-bottom: 1.5px solid;;
 }
@@ -1919,7 +1928,7 @@ body.page-faq section.section.is-width-standard.has-gutter-enabled .one-half.med
     justify-content: end;
 }
 .product .accordion-two-section {
-    border-top: 1.5px solid;;
+    /* border-top: 1.5px solid;; */
     padding: 15px 0;
     display: block !important;
 }
@@ -2204,7 +2213,7 @@ body.blog .container {
     }
 }
 body.blog .container [data-load-more--grid]{
-    padding: 0 10px;
+    padding: 0 12px;
 }
 body.blog .shopify-section.blog-main.has-sidebar-option.jsBlog.jsSidebar {
     background: #f8f0e3;
@@ -2411,7 +2420,7 @@ body {
     }
 } */
 .article .title {
-    font-size: calc(1rem + 1vw);
+    /* font-size: calc(1rem + 1vw); */
 }
 .collection .section {
     max-width: 100%;
@@ -2718,9 +2727,11 @@ footer ul.social-icons li a .icon svg{
 }
 
 /* Add borders */
+@media (min-width: 799px){
 
 section.section.better-section .image-with-text__column:first-child{
     border-right: 1.5px solid;
+}
 }
 .mobile-header{
     border-bottom: 1.5px solid #000;
@@ -2758,11 +2769,11 @@ section.footer__extra-content.section:last-child,
 section.footer__extra-content.section:last-child .footer__content{
     border-top: 0 !important;
 }
-@media (min-width: 799px){
+/* @media (min-width: 799px){ */
      .custom_liquid{
-        /* border-top: 1.5px solid; */
+        border-bottom: 1.5px solid;
     }
-}
+/* } */
 
 .excerpt{
     font-size: 1rem;
@@ -2941,13 +2952,14 @@ body.article .article.blog-card.card{
     margin-left: 10px;
     margin-right: 10px;
 }
+body.article .related-blogs--title{
+    margin-left: 10px;
+}
 @media only screen and (max-width: 798px){
     body.article .article.blog-card.card{
         width: 100% !important;
     }
-    body.article .related-blogs--title{
-        margin-left: 0;
-    }
+
 }
 body.article .related-blogs .related-blogs--content{
     width: 100%;
@@ -2984,4 +2996,46 @@ body.article .related-blogs .related-blogs--content{
     .logo_list .image__wrapper{
         width: 100px;
     }
+}
+
+@media only screen and (max-width: 798px){
+    .product .product-main .product-gallery__image .image__container,
+.shopify-section:not(.header):not(.featured-collection-section):not(.blog-main):not(.overlaid-header-option):not(.article-main):not(.footer):not(.collection-main) .image-element__wrap{
+    border: 1.5px solid;
+}
+}
+
+
+/* Set top image height */
+@media only screen and (max-width: 798px){
+    /* .product .product-main .product-gallery__image .image__container, */
+.template-page.page-faq .FAQ .faq__column-2 .image-element__wrap,
+.template-page .image-with-text-1 .image-with-text__column .image-element__wrap{
+padding-top: 130%;
+position: relative;
+}
+/* .product .product-main .product-gallery__image .image__container .zoom-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.product .product-main .product-gallery__image .image__container .zoom-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+} */
+.template-page.page-faq .FAQ .faq__column-2 .image-element__wrap img,
+.template-page .image-with-text-1 .image-with-text__column .image-element__wrap img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
 }
