@@ -1638,10 +1638,15 @@ body.page-the-never-ever-list .image-with-text__text-column.image-with-text__col
 .page-the-never-ever-list .maintitle,
 .page-what-we-stand-for .maintitle {
     border-bottom: 1.5px solid;;
-    border-top: 1.5px solid;;
     padding: 22px!important;
     /* font-size: 63px !important;
     line-height: 63px; */
+}
+@media only screen and (max-width: 798px){
+    .page-the-never-ever-list .maintitle,
+    .page-what-we-stand-for .maintitle {
+    border-top: 1.5px solid;;
+    }
 }
 html.js.no-touch.mediaqueries.no-touchevents {
     padding-bottom: 0 !important;

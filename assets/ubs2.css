@@ -27,7 +27,11 @@
 }
 .page-our-ingredients-list .maintitle {
     border-bottom: 1.5px solid;
+}
+@media only screen and (max-width: 798px){
+  .page-our-ingredients-list .maintitle {
     border-top: 1.5px solid;
+  }
 }
 .Introducing-Section .maintitle.title {
     padding: 0px 22px;
