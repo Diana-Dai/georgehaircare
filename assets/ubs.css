@@ -2791,7 +2791,7 @@ section.footer__extra-content.section:last-child .footer__content{
     object-fit: cover;
 }
 @media (min-width: 799px){
-.page-about-banner .image-element__wrap img{
+.page-about-banner .image-with-text__column .image-element__wrap img{
     border-right: 1.5px solid;
 }
 }
