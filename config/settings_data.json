@@ -576,7 +576,6 @@
           },
           "header-vertical-1": {
             "type": "icons",
-            "disabled": true,
             "settings": {
               "icon_style": "text",
               "display_search": false
