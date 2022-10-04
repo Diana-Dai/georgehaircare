@@ -13,7 +13,7 @@
 {% endif %}
 
 <label class="label is-sr-only" for="quantity">{{ 'products.product.quantity' | t }}</label>
-<div class="quantity-wrapper field has-addons quantity-style--{{ settings.qty_box_style }} {{ size }}">
+<div class="quantity-wrapper field has-addons quantity-style--{{ settings.qty_box_style }} is-small">
   <div class="control minus-control">
     <span class="quantity-minus quantity-element button is-inverse" data-update-quantity="minus" {% if value == 1 %}disabled{% endif %}>
       {% render 'icon', name: icon-minus %}
