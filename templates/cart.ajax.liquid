@@ -191,7 +191,7 @@
       {%- endif -%}
 
       {% comment %} Subtotal {% endcomment %}
-      {{ cart.total_price }}
+      {{ cart | json }}
       <div class="ajax-cart__subtotal ajax-cart__details-row is-flex is-justify-space-between">
         <div class="ajax-cart__row-description">
           <span>{{ 'layout.general.subtotal' | t }}:</span>
