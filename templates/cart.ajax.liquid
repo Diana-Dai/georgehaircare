@@ -171,8 +171,7 @@
     <div class="ajax-cart__details-wrapper">
       {%- if cart.cart_level_discount_applications != blank -%}
         <div class="cart__discounts ajax-cart__details-row is-flex is-justify-space-between sale">
-{% comment %}
-                {%- for discount_application in cart.cart_level_discount_applications -%}
+        {%- for discount_application in cart.cart_level_discount_applications -%}
           <div class="ajax-cart__row-description">
             <p>{{- discount_application.title -}}</p>
           </div>
@@ -186,12 +185,10 @@
             </span>
           </p>
         {%- endfor -%}
-        {% endcomment %}
         </div>
       {%- endif -%}
 
       {% comment %} Subtotal {% endcomment %}
-      {{ cart | json }}
       <div class="ajax-cart__subtotal ajax-cart__details-row is-flex is-justify-space-between">
         <div class="ajax-cart__row-description">
           <span>{{ 'layout.general.subtotal' | t }}:</span>
