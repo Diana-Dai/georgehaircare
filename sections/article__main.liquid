@@ -353,6 +353,17 @@
         {% endif %}
       </div>
 
+
+
+    {% endpaginate %}
+    </section>
+    
+  </div>
+  
+</section>
+<div class="related-blogs-container">
+<div class="section
+  is-width-standard">
       {% comment %} Related blog posts {% endcomment %}
       {% if blog.articles_count > 1 %}
         <div class="container related-blogs has-padding-bottom" {{ block.shopify_attributes }}>
@@ -360,7 +371,7 @@
             <h4 class="title">{{ 'blogs.article.additional_articles' | t: title: blog.title }}</h4>
           </div>
 
-          <div class="one-whole column related-blogs--content equal-columns--outside-trim field is-grouped is-flex-wrap">
+          <div class="one-whole column related-blogs--content field is-grouped is-flex-wrap">
             {% assign article_found = false %}
             {% for a in blog.articles limit: 4 %}
               {% assign skip_article = false %}
@@ -451,13 +462,10 @@
 
         </div>
       {% endif %}
+    </div>
 
-    {% endpaginate %}
-    </section>
   </div>
-</section>
-
-<script data-theme-editor-load-script src="{{ 'z__jsSidebar.js' | asset_url }}"></script>
+    <script data-theme-editor-load-script src="{{ 'z__jsSidebar.js' | asset_url }}"></script>
 
 {% schema %}
 

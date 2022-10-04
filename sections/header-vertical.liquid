@@ -92,9 +92,9 @@
         <div class="header__brand is-flex is-justify-{{ section.settings.alignment }} text-align-{{ section.settings.alignment }}">
           {% if block.settings.logo != blank %}
             {% if template.name == 'index' %}
-              <h1 class="visuallyhidden">{{ shop.name }}</h1>
+              <h1 class="visuallyhidden">George</h1>
             {% endif %}
-            <a class="header__logo header__link primary-logo" href="{{ routes.root_url }}" title="{{ shop.name }}">
+            <a class="header__logo header__link primary-logo" href="{{ routes.root_url }}" title="George">
               {% render 'image-element',
                       image: block.settings.logo,
                       alt: block.settings.logo.alt,
@@ -105,12 +105,12 @@
             {% if template.name == 'index' %}
               <h1 class="header__logo-text">
                 <a href="{{ routes.root_url }}" class="header__link primary-brand">
-                  {{ shop.name }}
+                  George
                 </a>
               </h1>
             {% else %}
               <a href="{{ routes.root_url }}" class="header__logo-text header__link primary-brand">
-                {{ shop.name }}
+                George
               </a>
             {% endif %}
           {% endif %}

@@ -235,7 +235,13 @@
                 icon_class: 'icon--cart'
               %}
             {% endif %}
-            <span class="text">{{ add_to_cart_label }}</span>
+            
+            <span class="text">
+              {% if settings.cart_action == 'mini_cart' or settings.cart_action == 'drawer' %} Quick Add + 
+              {%else%}
+              {{ add_to_cart_label }}
+              {% endif %}
+            </span>
             {% if  settings.button_cart_icon != blank and settings.button_cart_icon_position == 'right' %}
               {%
                 render 'icon',

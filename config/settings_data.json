@@ -92,7 +92,7 @@
     "heading_color": "#000000",
     "banner_heading_color": "#f9c764",
     "divider_color": "#000000",
-    "logo_text": "#ffffff",
+    "logo_text": "#f9c764",
     "header_background": "#e16749",
     "header_link_color": "#000000",
     "header_link_hover_color": "#f9c764",
@@ -541,7 +541,6 @@
           "header-vertical-0": {
             "type": "logo",
             "settings": {
-              "logo": "shopify:\/\/shop_images\/george_primary_logomark_black.png",
               "logo_width": 100
             }
           },

@@ -50,8 +50,12 @@ context: <string>
 
       {% if product.available and product_on_sale %}
         <div class="sale-sticker thumbnail-sticker sticker-{{i}}">
+{%- comment -%}
           <span class="sticker-text">{{ 'collections.general.sale' | t }}</span>
-        </div>
+{%- endcomment -%}       
+<span class="sticker-text">Bundle SAVE $38</span>
+
+    </div>
       {% endif %}
 
       {% unless product.available %}
