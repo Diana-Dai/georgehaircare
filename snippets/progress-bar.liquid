@@ -7,6 +7,7 @@
 {% assign 7_discount_left = 7_discount_value | minus: cart_total %}
 {% assign 10_discount_left = 10_discount_value | minus: cart_total %}
 {% assign 12_discount_left = 12_discount_value | minus: cart_total %}
+{{ free_shipping_value }}
 
 {% if 7_discount_left > 0 %}
     {%- assign difference = 7_discount_value -%}
@@ -20,7 +21,6 @@
         <strong>{{ 7_discount_left | money }}</strong> to get
         <strong>7% OFF</strong>
     {%- endcapture -%}
-{{ free_shipping_value }}
 {% elsif free_shipping_value > 0 %}
     {%- assign difference = shipping_value_left | minus: 7_discount_value -%}
     {%- assign percentage_left =  shipping_value_left | divided_by: difference  -%}
