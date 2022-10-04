@@ -332,7 +332,7 @@
     position: absolute;
     margin-top: 5px;
     margin-left: 3px;
-    z-index: 999;
+/*     z-index: 999; */
 }
   .product-breadcrumb {
     padding-top: 0 !important;
