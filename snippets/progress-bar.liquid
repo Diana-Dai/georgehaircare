@@ -21,7 +21,7 @@
         <strong>{{ 7_discount_left | money }}</strong> to get
         <strong>7% OFF</strong>
     {%- endcapture -%}
-{% elsif free_shipping_value > 0 %}
+{% elsif shipping_value_left > 0 %}
     {%- assign difference = shipping_value_left | minus: 7_discount_value -%}
     {%- assign percentage_left =  shipping_value_left | divided_by: difference  -%}
     {%- assign percentage =  1 | minus: percentage_left -%}
