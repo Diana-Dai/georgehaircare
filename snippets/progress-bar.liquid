@@ -1,4 +1,5 @@
 {% assign 7_discount_value = settings.7_discount_value | times:100.000 %}
+{{ 7_discount_value }}
 {% assign free_shipping_value = settings.free_shipping_value | times:100.000 %}
 {% assign 10_discount_value = settings.10_discount_value | times:100.000 %}
 {% assign 12_discount_value = settings.12_discount_value | times:100.000 %}
@@ -9,7 +10,6 @@
 {% assign 12_discount_left = 12_discount_value | minus: cart_total %}
 
 {% if 7_discount_left > 0 %}
-{{ 7_discount_left }}
     {%- assign difference = 7_discount_value -%}
     {%- assign percentage_left =  7_discount_left | divided_by: difference  -%}
     {%- assign percentage =  1 | minus: percentage_left -%}
