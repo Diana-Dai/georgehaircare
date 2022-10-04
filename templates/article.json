@@ -69,7 +69,7 @@
         "sidebar_position": "left",
         "width": "standard",
         "padding_top": 40,
-        "padding_bottom": 8,
+        "padding_bottom": 0,
         "css_class": "",
         "custom_css": ""
       }
