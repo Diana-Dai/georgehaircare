@@ -230,7 +230,7 @@
     "favicon": "shopify:\/\/shop_images\/GEORGE_FB_Insta_Avatar_1.png",
     "ajax_upsell": "all-products",
     "7_discount_value": "99.98",
-    "free_shipping_value": "100",
+    "free_shipping_value": "",
     "10_discount_value": "149.97",
     "12_discount_value": "199.96",
     "checkout_header_image": "shopify:\/\/shop_images\/glow__page--checkout-banner-01.jpg",
