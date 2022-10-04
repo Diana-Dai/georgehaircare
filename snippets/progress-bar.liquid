@@ -10,7 +10,7 @@
 
 {% if 7_discount_left > 0 %}
 {{ 7_discount_left }}
-    {%- assign difference = 7_discount_left -%}
+    {%- assign difference = 7_discount_value -%}
     {%- assign percentage_left =  7_discount_left | divided_by: difference  -%}
     {%- assign percentage =  1 | minus: percentage_left -%}
     {%- assign progress_width = percentage | times: 25 -%}
