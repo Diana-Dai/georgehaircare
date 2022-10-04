@@ -3089,8 +3089,8 @@ position: relative;
         font-size: 18px;
     }
 /* Show video on Desktop, show image on Mobile */
+  
 @media only screen and (max-width: 798px){
-
 .template-index .dynamic-sections .shopify-section:first-child{
     display: none;
 }
@@ -3100,6 +3100,5 @@ position: relative;
 @media (min-width: 799px){
    .template-index .dynamic-sections .shopify-section:nth-child(2){
         display: none;
-
     }
 }
