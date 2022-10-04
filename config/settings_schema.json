@@ -2653,22 +2653,22 @@
         "label": "Ajax Upsell"
       },
       {
-        "type": "number",
+        "type": "text",
         "id": "7_discount_value",
         "label": "7 Discount Value"
       },
       {
-        "type": "number",
+        "type": "text",
         "id": "free_shipping_value",
         "label": "Free Shipping Value"
       },
       {
-        "type": "number",
+        "type": "text",
         "id": "10_discount_value",
         "label": "10 Discount Value"
       },
       {
-        "type": "number",
+        "type": "text",
         "id": "12_discount_value",
         "label": "12 Discount Value"
       }
