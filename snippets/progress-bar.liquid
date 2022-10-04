@@ -149,12 +149,10 @@ Add
     {%- endcapture -%}
 {% elsif 10_discount_left > 0 %}
 
-    {%- assign difference = 10_discount_value | minus: 7_discount_left -%}
+    {%- assign difference = 10_discount_value | minus: 7_discount_value -%}
     {%- assign percentage_left =  10_discount_left | divided_by: difference  -%}
     {%- assign percentage =  1 | minus: percentage_left -%}
     {%- assign progress_width = percentage | times: 33.3 | plus: 33.3  -%}
-    {{ 10_discount_left }}
-{{ difference }}
     {%- capture message -%}
     <img src="https://www.amabattery.co.za/wpimages/wp4cb45f10.gif"> 
 
