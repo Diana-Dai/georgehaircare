@@ -139,7 +139,7 @@ Add
     {%- assign difference = 7_discount_value -%}
     {%- assign percentage_left =  7_discount_left | divided_by: difference  -%}
     {%- assign percentage =  1 | minus: percentage_left -%}
-    {%- assign progress_width = percentage | times: 25 -%}
+    {%- assign progress_width = percentage | times: 33.3 -%}
     {%- capture message -%}
     <img src="https://www.amabattery.co.za/wpimages/wp4cb45f10.gif"> 
 
@@ -151,7 +151,7 @@ Add
     {%- assign difference = 10_discount_value | minus: 7_discount_left -%}
     {%- assign percentage_left =  10_discount_left | divided_by: difference  -%}
     {%- assign percentage =  1 | minus: percentage_left -%}
-    {%- assign progress_width = percentage | times: 25 | plus: 50  -%}
+    {%- assign progress_width = percentage | times: 33.3 | plus: 33.3  -%}
     {%- capture message -%}
     <img src="https://www.amabattery.co.za/wpimages/wp4cb45f10.gif"> 
 
@@ -163,7 +163,7 @@ Add
 {%- assign difference = 12_discount_value | minus: 10_discount_value -%}
 {%- assign percentage_left =  12_discount_left | divided_by: difference  -%}
 {%- assign percentage =  1 | minus: percentage_left -%}
-{%- assign progress_width = percentage | times: 25 | plus: 75  -%}
+{%- assign progress_width = percentage | times: 33.3 | plus: 66.6  -%}
 {%- capture message -%}
 <img src="https://www.amabattery.co.za/wpimages/wp4cb45f10.gif"> 
 Add
