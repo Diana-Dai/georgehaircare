@@ -2654,13 +2654,13 @@
       },
       {
         "type": "number",
-        "id": "free_shipping_value",
-        "label": "Free Shipping Value"
+        "id": "7_discount_value",
+        "label": "7 Discount Value"
       },
       {
         "type": "number",
-        "id": "7_discount_value",
-        "label": "7 Discount Value"
+        "id": "free_shipping_value",
+        "label": "Free Shipping Value"
       },
       {
         "type": "number",
