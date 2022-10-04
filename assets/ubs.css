@@ -3098,7 +3098,7 @@ position: relative;
 }
 
 @media (min-width: 799px){
-   .template-index .dynamic-sections .shopify-section:nth-child(2){
+   .template-index #shopify-section-template--15314472009860__1664848941850fe1f9{
         display: none;
     }
 }
