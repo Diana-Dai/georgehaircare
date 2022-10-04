@@ -1,6 +1,6 @@
-{% assign free_shipping_value = 10000.000 %}
-{% assign 10_discount_value = 11000.000 %}
-{% assign 12_discount_value = 12000.000 %}
+{% assign free_shipping_value = settings.free_shipping_value | times:100.000 %}
+{% assign 10_discount_value = settings.10_discount_value | times:100.000 %}
+{% assign 12_discount_value = settings.12_discount_value | times:100.000 %}
 {% assign cart_total = cart.total_price %}
 {% assign shipping_value_left = free_shipping_value | minus: cart_total %}
 {% assign 10_discount_left = 10_discount_value | minus: cart_total %}
