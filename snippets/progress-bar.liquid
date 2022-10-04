@@ -8,30 +8,30 @@
 {% assign 10_discount_left = 10_discount_value | minus: cart_total %}
 {% assign 12_discount_left = 12_discount_value | minus: cart_total %}
 
-{% if shipping_value_left > 0 %}
-    {%- assign difference = free_shipping_value -%}
-    {%- assign percentage_left =  shipping_value_left | divided_by: difference  -%}
+{% if 7_discount_left > 0 %}
+    {%- assign difference = 7_discount_left -%}
+    {%- assign percentage_left =  7_discount_left | divided_by: difference  -%}
     {%- assign percentage =  1 | minus: percentage_left -%}
-    {%- assign progress_width = percentage | times: 33.33 -%}
+    {%- assign progress_width = percentage | times: 25 -%}
     {%- capture message -%}
     <img src="https://www.amabattery.co.za/wpimages/wp4cb45f10.gif"> 
 
         Add
-        <strong>{{ shipping_value_left | money }}</strong> to get
-        <strong>free shipping</strong>
+        <strong>{{ 7_discount_left | money }}</strong> to get
+        <strong>7% OFF</strong>
     {%- endcapture -%}
 
-{% elsif 7_discount_left > 0 %}
-    {%- assign difference = 7_discount_left | minus: free_shipping_value -%}
-    {%- assign percentage_left =  7_discount_left | divided_by: difference  -%}
+{% elsif free_shipping_value > 0 %}
+    {%- assign difference = shipping_value_left | minus: 7_discount_value -%}
+    {%- assign percentage_left =  shipping_value_left | divided_by: difference  -%}
     {%- assign percentage =  1 | minus: percentage_left -%}
     {%- assign progress_width = percentage | times: 25 | plus: 25  -%}
     {%- capture message -%}
     <img src="https://www.amabattery.co.za/wpimages/wp4cb45f10.gif"> 
 
     Add
-    <strong>{{ 10_discount_left | money }}</strong> to unlock
-    <strong>7% OFF</strong>
+    <strong>{{ shipping_value_left | money }}</strong> to get
+    <strong>free shipping</strong>
     {%- endcapture -%}
   
 {% elsif 10_discount_left > 0 %}
