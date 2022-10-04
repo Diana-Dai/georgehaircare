@@ -12,7 +12,6 @@
 {{ 7_discount_left }}
     {%- assign difference = 7_discount_left -%}
     {%- assign percentage_left =  7_discount_left | divided_by: difference  -%}
-    {{ percentage_left }}
     {%- assign percentage =  1 | minus: percentage_left -%}
     {%- assign progress_width = percentage | times: 25 -%}
     {%- capture message -%}
