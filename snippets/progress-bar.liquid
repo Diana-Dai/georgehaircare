@@ -9,6 +9,7 @@
 {% assign 12_discount_left = 12_discount_value | minus: cart_total %}
 
 {% if 7_discount_left > 0 %}
+{{ 7_discount_left }}
     {%- assign difference = 7_discount_left -%}
     {%- assign percentage_left =  7_discount_left | divided_by: difference  -%}
     {{ percentage_left }}
