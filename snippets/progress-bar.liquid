@@ -1,4 +1,5 @@
 {% assign free_shipping_value = settings.free_shipping_value | times:100.000 %}
+{% assign 7_discount_value = settings.7_discount_value | times:100.000 %}
 {% assign 10_discount_value = settings.10_discount_value | times:100.000 %}
 {% assign 12_discount_value = settings.12_discount_value | times:100.000 %}
 {% assign cart_total = cart.total_price %}
@@ -18,11 +19,25 @@
         <strong>{{ shipping_value_left | money }}</strong> to get
         <strong>free shipping</strong>
     {%- endcapture -%}
+
+{% elsif 7_discount_left > 0 %}
+    {%- assign difference = 7_discount_left | minus: free_shipping_value -%}
+    {%- assign percentage_left =  7_discount_left | divided_by: difference  -%}
+    {%- assign percentage =  1 | minus: percentage_left -%}
+    {%- assign progress_width = percentage | times: 25 | plus: 25  -%}
+    {%- capture message -%}
+    <img src="https://www.amabattery.co.za/wpimages/wp4cb45f10.gif"> 
+
+    Add
+    <strong>{{ 10_discount_left | money }}</strong> to unlock
+    <strong>7% OFF</strong>
+    {%- endcapture -%}
+  
 {% elsif 10_discount_left > 0 %}
-    {%- assign difference = 10_discount_value | minus: free_shipping_value -%}
+    {%- assign difference = 10_discount_value | minus: 7_discount_left -%}
     {%- assign percentage_left =  10_discount_left | divided_by: difference  -%}
     {%- assign percentage =  1 | minus: percentage_left -%}
-    {%- assign progress_width = percentage | times: 33.33 | plus: 33.33  -%}
+    {%- assign progress_width = percentage | times: 25 | plus: 50  -%}
     {%- capture message -%}
     <img src="https://www.amabattery.co.za/wpimages/wp4cb45f10.gif"> 
 
@@ -34,7 +49,7 @@
 {%- assign difference = 12_discount_value | minus: 10_discount_value -%}
 {%- assign percentage_left =  12_discount_left | divided_by: difference  -%}
 {%- assign percentage =  1 | minus: percentage_left -%}
-{%- assign progress_width = percentage | times: 33.33 | plus: 66.66  -%}
+{%- assign progress_width = percentage | times: 25 | plus: 75  -%}
 {%- capture message -%}
 <img src="https://www.amabattery.co.za/wpimages/wp4cb45f10.gif"> 
 Add
@@ -62,6 +77,10 @@ Add
     <div
       class="mu-absolute  mu-h-2"
       style="background: rgb(255, 204, 1); width: {{progress_width}}%;"
+    ></div>
+        <div
+      class="mu-flex-1 mu-h-2 mu-bg-transparent mu-z-20 mu-mix-blend-overlay mu-border-r"
+      style="border-color: rgb(113, 128, 150); display: block;"
     ></div>
     <div
       class="mu-flex-1 mu-h-2 mu-bg-transparent mu-z-20 mu-mix-blend-overlay mu-border-r"
