@@ -3119,7 +3119,7 @@ position: relative;
 .product__images .sticker-position-left{
   position:absolute;
   right:0;
-  
+  top:0;
 }
 
 }
