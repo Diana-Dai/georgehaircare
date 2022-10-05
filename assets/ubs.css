@@ -3112,11 +3112,14 @@ position: relative;
 .product__images .sticker-position-left{
   position:absolute;
   right:0;
+  z-index:1;
+  top:0;
 }
 @media only screen and (max-width: 798px){
 .product__images .sticker-position-left{
   position:absolute;
-  left:-80px;
+  right:0;
+  
 }
 
 }
