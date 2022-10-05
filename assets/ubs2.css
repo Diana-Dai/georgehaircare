@@ -382,9 +382,9 @@ body.page-about-banner .shopify-section.image-with-text.image-with-text-1 {
     padding-right: 0 !important;
 }
 }
-.page-the-never-ever-list .shopify-section.footer.footer--classic {
+/* .page-the-never-ever-list .shopify-section.footer.footer--classic {
     background: #ec86d0;
-}
+} */
 @media (min-width: 799px){
 .template-page .dynamic-sections{
 border-top: 1.5px solid;
