@@ -3107,7 +3107,7 @@ position: relative;
     }
 }
 
-.has-product-sticker .sticker-holder{
+.product__information .sticker-position-left{
   position:absolute;
-  left:-100px;
+  left:-80px;
 }
