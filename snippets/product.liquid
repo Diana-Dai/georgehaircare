@@ -43,6 +43,15 @@
         {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg placeholder-svg--product' }}
       </div>
     {% else %}
+          {% comment %} Sale sticker {% endcomment %}
+    {% if stickers_enabled %}
+      {% assign collection_handles = product.collections | map: 'handle' %}
+      {%
+        render 'product-thumbnail__sticker',
+        context: 'product',
+        collection_handles: collection_handles,
+      %}
+    {% endif %}
       {%
         render 'product__images',
         product: product,
@@ -66,15 +75,7 @@
               column
               medium-down--one-whole">
 
-    {% comment %} Sale sticker {% endcomment %}
-    {% if stickers_enabled %}
-      {% assign collection_handles = product.collections | map: 'handle' %}
-      {%
-        render 'product-thumbnail__sticker',
-        context: 'product',
-        collection_handles: collection_handles,
-      %}
-    {% endif %}
+
 
     {%- for block in section.blocks -%}
       <div class="product-block
