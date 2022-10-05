@@ -3111,7 +3111,7 @@ position: relative;
 }
 .product__images .sticker-position-left{
   position:absolute;
-  left:-80px;
+  right:0;
 }
 @media only screen and (max-width: 798px){
 .product__images .sticker-position-left{
