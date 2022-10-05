@@ -1227,6 +1227,7 @@ body.blog .card-image.blog-card__image .image-element__wrap {
 }
 body.product .product__information.has-product-sticker.one-half.column.medium-down--one-whole {
     padding:0;
+  position:relative;
 }
 body.page-faq .page-faq__column-wrap.container.column-wrapper .one-half.medium-down--one-whole.column.faq.faq__column-1 {
     margin: 0;
