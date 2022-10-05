@@ -3106,3 +3106,8 @@ position: relative;
         display: none;
     }
 }
+
+.has-product-sticker .sticker-holder{
+  position:absolute;
+  left:-100px;
+}
