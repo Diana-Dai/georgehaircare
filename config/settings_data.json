@@ -303,7 +303,7 @@
           "background": "#e16749",
           "text_color": "#000000",
           "width": "wide",
-          "homepage_only": true,
+          "homepage_only": false,
           "enable_sticky": false,
           "show_close_icon": true,
           "css_class": "",
