@@ -356,6 +356,15 @@
   {% render 'mobile-search' %}
 
   {% render 'structured-data' %}
+</body>
+
+<script crossorigin='anonymous' src="https://widebundle.com/scripttag.php?shop=georgehaircare.myshopify.com&v={{ "now" | date: "%s"}}"></script>
+</html>
+{% endcapture %}
+{% assign content = content | replace_first: '<!doctype', '!doctype' | split: ' <' %}
+{%- for html in content -%}{%- assign htmlblock = html | strip | prepend: ' <' -%}{{htmlblock | replace: ' </', '</'}}{%- endfor -%}
+
+
 <!-- Begin Shopify-Afterpay JavaScript Snippet (v1.1.3) -->
 {% if cart.currency.iso_code == shop.currency %}
 <script type="text/javascript">
@@ -371,7 +380,7 @@
 // var afterpay_cbt_enabled = false;
 
 // var afterpay_product_integration_enabled = true;
-var afterpay_product_selector = '.product_section';
+// var afterpay_product_selector = '#product-price-selector';
 // var afterpay_variable_price_fallback = false;
 // var afterpay_variable_price_fallback_selector = '';
 // var afterpay_variable_price_fallback_method = 'mutation';  // Can be 'mutation' or 'interval'.
@@ -408,10 +417,3 @@ var afterpay_js_snippet_version = '1.1.3';
 <!-- Afterpay disabled: {{ cart.currency.iso_code }} != {{ shop.currency }} -->
 {% endif %}
 <!-- End Shopify-Afterpay JavaScript Snippet (v1.1.3) -->
-</body>
-
-<script crossorigin='anonymous' src="https://widebundle.com/scripttag.php?shop=georgehaircare.myshopify.com&v={{ "now" | date: "%s"}}"></script>
-</html>
-{% endcapture %}
-{% assign content = content | replace_first: '<!doctype', '!doctype' | split: ' <' %}
-{%- for html in content -%}{%- assign htmlblock = html | strip | prepend: ' <' -%}{{htmlblock | replace: ' </', '</'}}{%- endfor -%}
