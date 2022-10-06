@@ -304,7 +304,7 @@
           "text_color": "#000000",
           "width": "wide",
           "homepage_only": false,
-          "enable_sticky": false,
+          "enable_sticky": true,
           "show_close_icon": true,
           "css_class": "",
           "custom_css": ""
