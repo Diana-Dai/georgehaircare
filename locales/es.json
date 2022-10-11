@@ -2,12 +2,12 @@
   "product": {
     "variants": {
       "choose_option": "Elija una {{ option }}",
-      "chosen_option_html": "{{ option }}: <span>{{ value }}</span>",
+      "chosen_option_html": "{{ option }}: <span>{{ value }}<\/span>",
       "choose_variant": "Elige una variante"
     },
     "price": {
       "range_html": "{{ price_min }} - {{ price_max }}",
-      "unit_pricing_html": "{{ unit_quantity }} | {{ unit_price }} / {{ unit_measurement}}"
+      "unit_pricing_html": "{{ unit_quantity }} | {{ unit_price }} \/ {{ unit_measurement}}"
     },
     "badge": {
       "sale_percentage_range_html": "Guardar hasta {{ price_percent }}%",
@@ -25,8 +25,8 @@
       "out_of_stock": "Agotado",
       "view_store_info": "Ver información de la tienda",
       "check_other_stores": "Consultar disponibilidad en otras tiendas",
-      "available_for_pick_up_at_html": "Recogida disponible en <b>{{ location_name }}</b>",
-      "unavailable_for_pick_up_at_html": "Recolección no disponible actualmente en <b>{{ location_name }}</b>",
+      "available_for_pick_up_at_html": "Recogida disponible en <b>{{ location_name }}<\/b>",
+      "unavailable_for_pick_up_at_html": "Recolección no disponible actualmente en <b>{{ location_name }}<\/b>",
       "available_for_pick_up_at_time_html": "Recogida disponible, {{ pick_up_time }}",
       "unavailable_for_pick_up_at_time_html": "Recogida no disponible actualmente",
       "kilometers": "km",
@@ -50,7 +50,7 @@
     "404": {
       "title": "Página no encontrada",
       "subtext": "Lo sentimos, pero la página solicitada no existe.",
-      "continue_shopping_html": "Prueba a buscar o <a href=\"{{ continue_link }}\">sigue comprando →</a>"
+      "continue_shopping_html": "Prueba a buscar o <a href=\"{{ continue_link }}\">sigue comprando →<\/a>"
     },
     "pagination": {
       "previous": "Previo",
@@ -68,9 +68,9 @@
       "login_form_submit": "Entrar",
       "signup_form_submit": "Submit",
       "signup_form_success": "Le enviaremos un correo electrónico correcta antes de abrir!",
-      "admin_link_html": "Le enviaremos un correo electrónico correcta antes de abrir! <a href=\"/admin\" class=\"text-link\">Entre aquí</a>",
+      "admin_link_html": "Le enviaremos un correo electrónico correcta antes de abrir! <a href=\"\/admin\" class=\"text-link\">Entre aquí<\/a>",
       "password_link": "Entrar usando la contraseña",
-      "powered_by_shopify_html": "Esta tienda estará propulsado por <a href=\"https://www.shopify.com/\" target=\"_blank\">Shopify</a>"
+      "powered_by_shopify_html": "Esta tienda estará propulsado por <a href=\"https:\/\/www.shopify.com\/\" target=\"_blank\">Shopify<\/a>"
     },
     "meta": {
       "tagged_html": "Etiquetado \"{{ tags }}\"",
@@ -78,7 +78,7 @@
     },
     "forms": {
       "post_error": "No todos los campos han sido rellenados correctamente",
-      "post_field_error_html": "El <strong>{{ field }}</strong> {{ error }}",
+      "post_field_error_html": "El <strong>{{ field }}<\/strong> {{ error }}",
       "required_field": "Indica un campo obligatorio"
     },
     "newsletter_form": {
@@ -150,7 +150,7 @@
       "next_article_html": "Siguiente",
       "tags": "Etiquetas",
       "author": "Autor",
-      "comment_meta_html": "<strong>{{ author }}</strong> en <strong><time datetime=\"{{ date }}\">{{ date }}</time></strong>"
+      "comment_meta_html": "<strong>{{ author }}<\/strong> en <strong><time datetime=\"{{ date }}\">{{ date }}<\/time><\/strong>"
     },
     "counts": {
       "comments_with_count": {
@@ -258,7 +258,7 @@
     },
     "item": {
       "price": {
-        "price_per_unit_html": "{{total_quantity}} | {{unit_price}} / {{unit_measure}}"
+        "price_per_unit_html": "{{total_quantity}} | {{unit_price}} \/ {{unit_measure}}"
       }
     }
   },
@@ -436,9 +436,9 @@
       "continue_browsing_html": "No hay artículos en tu carta.",
       "continue_shopping_link_html": "Seguir comprando →",
       "tax_and_shipping": "Los impuestos y gastos de envío se calculan en la pantalla de pagos",
-      "taxes_and_shipping_policy_at_checkout_html": "Los impuestos y <a href=\"{{ link }}\">gastos de envío</a> se calculan en la pantalla de pagos",
+      "taxes_and_shipping_policy_at_checkout_html": "Los impuestos y <a href=\"{{ link }}\">gastos de envío<\/a> se calculan en la pantalla de pagos",
       "taxes_included_but_shipping_at_checkout": "En la pantalla de pagos se incluye el impuesto y se calculan los gastos de envío",
-      "taxes_included_and_shipping_policy_html": "Impuesto incluido. Los <a href=\"{{ link }}\">gastos de envío</a> se calculan en la pantalla de pagos.",
+      "taxes_included_and_shipping_policy_html": "Impuesto incluido. Los <a href=\"{{ link }}\">gastos de envío<\/a> se calculan en la pantalla de pagos.",
       "orders_processed_in_currency_html": "Los pedidos se procesarán en {{ currency }}.",
       "note": "Nota",
       "note_detailed": "Incluya cualquier nota o instrucciones especiales para su pedido aquí:",
@@ -489,7 +489,7 @@
       "pick_a_currency": "Elige una moneda",
       "social": "Social",
       "close_window": "Cerrar",
-      "designer_credits_html": "<a href=\"http://outofthesandbox.com/\" target=\"_blank\" title=\"Flex Shopify Theme by Out of the Sandbox\">Diseñado por Out of the Sandbox</a>."
+      "designer_credits_html": "<a href=\"http:\/\/outofthesandbox.com\/\" target=\"_blank\" title=\"Flex Shopify Theme by Out of the Sandbox\">Diseñado por Out of the Sandbox<\/a>."
     },
     "social_sharing": {
       "title": "Compartir",
